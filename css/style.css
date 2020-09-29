@@ -91,7 +91,7 @@
         display: block;
         
     }
-    .togg.line-top{
+    .toggle.line-top{
         outline: none;
         transform: rotateZ(-45deg) translate(-5px, 6px);
     }
