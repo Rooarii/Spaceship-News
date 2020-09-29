@@ -1,3 +1,29 @@
-body {
-    margin-top: 100px;
+/*Menu*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 50px;
+    background-color: darkblue;
+}
+.nav-top-bar h1{
+    color: white;
+    line-height: 80px;
+}
+/*Sidebar*/
+.nav-list{
+    display: flex;
+    flex-direction: row;
+}
+.nav-list li{
+    margin:0 15px;
+    line-height: 80px;
+}
+.nav-list li a{
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.2s ease;
+}
+.nav-list li a:hover{
+    color: #FFF;
+    
 }
