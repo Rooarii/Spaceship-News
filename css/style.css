@@ -3,11 +3,10 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 0 50px;
-    background-color: darkblue;
+    background-color: black;
 }
 .nav-top-bar h1{
-    color: white;
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
     line-height: 80px;
 }
 /*Sidebar*/
@@ -20,7 +19,7 @@
     line-height: 80px;
 }
 .nav-list li a{
-    background: -webkit-linear-gradient(rgb(87, 3, 136), rgb(16, 6, 155));
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
     -webkit-background-clip: text;
     background-clip:"";
     -webkit-text-fill-color: transparent;
@@ -38,14 +37,16 @@
     top: 25px;
     right: 50px;
     cursor: pointer;
+    display: none;
 }
 .menu-burger > div{
     width: 25px;
     height: 2px;
     margin: 5px 0;
-    background: #FFF;
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
     border-radius: 2px;
     transition: transform 0.3s, opacity 0.2s;
+    
 }
 @media only screen and (max-width:700px){
     .menu{
@@ -88,6 +89,7 @@
     }
     .menu-burger{
         display: block;
+        
     }
     .togg.line-top{
         outline: none;
