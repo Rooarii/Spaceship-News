@@ -96,8 +96,9 @@
         transform: rotateZ(-45deg) translate(-5px, 6px);
     }
     .toggle.line-middle{
-        outline: none;}
+        outline: none;
         opacity: 0;
+    }
     .toggle.line-bottom{
         outline: none;
         transform: rotateZ(45deg) translate(-5px, -6px);
