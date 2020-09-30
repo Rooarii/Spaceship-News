@@ -55,6 +55,9 @@
     
 }
 /* main */
+main{
+    background-color: black;
+}
 .wrap {
   display: flex;
   justify-content: center;
@@ -158,9 +161,9 @@
 /*ARTICLE*/
 
 
-.article{
+/* .article{
     background-color: var(--color1);
-}
+} */
 .article-title{
     color:var(--color1);
     text-align: center;
