@@ -1,3 +1,157 @@
-body {
-    margin-top: 100px;
+:root{
+    --color1: #830BFB;
+    --color2: #58BCFD;
+    --color3: #E92297;
+    --color4: #333333;
 }
+/*Menu*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: black;
+}
+.nav-top-bar h1{
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    line-height: 80px;
+}
+/*Sidebar*/
+.nav-list{
+    display: flex;
+    flex-direction: row;
+}
+.nav-list li{
+    margin:0 15px;
+    line-height: 80px;
+}
+.nav-list li a{
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    -webkit-background-clip: text;
+    background-clip:"";
+    -webkit-text-fill-color: transparent;
+    transition: color 0.2s ease;
+    
+}
+.nav-list li a:hover{
+    color: #FFF;
+    
+}
+
+/*button burger*/
+.menu-burger{
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    cursor: pointer;
+    display: none;
+}
+.menu-burger > div{
+    width: 25px;
+    height: 2px;
+    margin: 5px 0;
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    border-radius: 2px;
+    transition: transform 0.3s, opacity 0.2s;
+    
+}
+/* main */
+.wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: black;
+}
+.card {
+    border: none;
+    border-radius: 30px;
+  width: 200px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 20px 24px;
+}
+.card-img {
+    border: none;
+    border-radius: 10px 10px 0 0;
+    background-size: cover;
+    background-position: center;
+    background-image: url("http://placekitten.com/200/300");
+    height: 200px;
+    width: 100%;
+}
+.card-body {
+  padding: 10px 20px;
+  background-color: #333333;
+  
+}
+
+.card-title {
+    color: var(--color2);
+}
+.card-button {
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    width: 30%;
+    color: white;
+    background: var(--color1);
+    background: linear-gradient(180deg, var(--color1) 0%,var(--color2) 48%);
+}
+
+@media only screen and (max-width:700px){
+    .menu{
+        background-color: transparent;
+    }
+    .nav-list{
+        width: 250px;
+        height: calc(100vh - 80px);
+        position: fixed;
+        top: 80px;
+        right: -250px;
+        display: flex;
+        flex-direction: column;
+        background:black;
+        padding: 30px 0;
+        transition: rigth 0.5s ease-in-out 0.1s;
+    
+    }
+    .nav-list-active{
+        left: 0;
+        height: 100vh;
+    }
+    .nav-list li{
+        text-align: center;
+        margin-top: 5px;
+    }
+    .nav-list li a:hover{
+        color: black;
+    }
+    .nav-list li a{
+        font-size: 30px;
+        color:linear-gradient(to top #8f6aae 38%, #f7c978 100%);
+    }
+    .menu-line{
+        width: 50%;
+        height: 2px;
+        background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%);
+        margin: auto;
+        border-radius: 2px;
+    }
+    .menu-burger{
+        display: block;
+        
+    }
+    .toggle.line-top{
+        outline: none;
+        transform: rotateZ(-45deg) translate(-5px, 6px);
+    }
+    .toggle.line-middle{
+        outline: none;
+        opacity: 0;
+    }
+    .toggle.line-bottom{
+        outline: none;
+        transform: rotateZ(45deg) translate(-5px, -6px);
+    }
+}
+
