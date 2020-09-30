@@ -1,3 +1,9 @@
+:root{
+    --color1: #830BFB;
+    --color2: #58BCFD;
+    --color3: #E92297;
+    --color4: #333333;
+}
 /*Menu*/
 .navbar{
     display: flex;
@@ -48,6 +54,50 @@
     transition: transform 0.3s, opacity 0.2s;
     
 }
+/* main */
+.wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: black;
+}
+.card {
+    border: none;
+    border-radius: 30px;
+  width: 200px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 20px 24px;
+}
+.card-img {
+    border: none;
+    border-radius: 10px 10px 0 0;
+    background-size: cover;
+    background-position: center;
+    background-image: url("http://placekitten.com/200/300");
+    height: 200px;
+    width: 100%;
+}
+.card-body {
+  padding: 10px 20px;
+  background-color: #333333;
+  
+}
+
+.card-title {
+    color: var(--color2);
+}
+.card-button {
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    width: 30%;
+    color: white;
+    background: var(--color1);
+    background: linear-gradient(180deg, var(--color1) 0%,var(--color2) 48%);
+}
+
 @media only screen and (max-width:700px){
     .menu{
         background-color: transparent;
@@ -104,3 +154,4 @@
         transform: rotateZ(45deg) translate(-5px, -6px);
     }
 }
+
