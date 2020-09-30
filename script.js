@@ -1,8 +1,10 @@
 var burger = document.querySelector('.menu-burger');
 var sidebar = document.querySelector('.nav-list');
+var sidebar2 = document.querySelector('.nav-list2');
 
 burger.addEventListener('click', () => {
     sidebar.classList.toggle('nav-list-active');
+    sidebar2.classList.toggle('nav-list-active');
     burger.classList.toggle('toggle');
 })
 

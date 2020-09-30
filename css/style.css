@@ -25,9 +25,6 @@
     line-height: 80px;
 }
 .nav-list li a{
-    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
-    -webkit-background-clip: text;
-    background-clip:"";
     -webkit-text-fill-color: transparent;
     transition: color 0.2s ease;
     
@@ -35,6 +32,9 @@
 .nav-list li a:hover{
     color: #FFF;
     
+}
+.nav-list2{
+    display: none;
 }
 
 /*button-burger*/
@@ -115,9 +115,25 @@
         transition: rigth 0.5s ease-in-out 0.1s;
     
     }
+    .nav-list2{
+        display: flex;
+        flex-direction: column;
+        transition: rigth 0.5s ease-in-out 0.1s;
+        position: absolute;
+        justify-content: flex-end;
+        padding: 5px 60px;
+    }
+    .nav-list2 li{
+        text-align: center;
+        margin-top: 5px;
+    }
+    .nav-list2 li a{
+        font-size: 10px;
+    }
     .nav-list-active{
         left: 0;
         height: 100vh;
+        position: absolute;
     }
     .nav-list li{
         text-align: center;
