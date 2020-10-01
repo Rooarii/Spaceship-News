@@ -271,7 +271,7 @@ section{
 }
 
 .footWrap {
-    line-height: 15px;
+    line-height: 30px;
     background-color: black;
     border-top: solid grey;
     border-width: 1px;
@@ -284,5 +284,78 @@ li {
     -webkit-text-fill-color: transparent;
     transition: color 0.2s ease;
     margin-right: 30px ;
+    font-size: 1.5em;
 }
 
+
+/*contact*/
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+input{
+    display: block;
+    margin: 10px auto;
+    width: 90%;
+    margin-bottom: 40px;
+    border-color: #333333;
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    transition: color 0.2s ease;
+    border-radius: 20px;
+    font-size: 2em;
+}
+
+textarea{
+    display: block;
+    margin: 10px auto;
+    height: 450px;
+    width: 90%;
+    border-color: #333333;
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    transition: color 0.2s ease;
+    border-radius: 20px;
+    font-size: 2em;
+}
+
+.fellows{
+    text-align: center;
+}
+
+.contact{
+    display: flex;
+    justify-content: center; 
+    padding-bottom: 30px;
+    margin-top: 45px;
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    -webkit-background-clip: text;
+    background-clip:"";
+    -webkit-text-fill-color: transparent;
+    transition: color 0.2s ease;
+    font-size: 3em;
+    
+} 
+
+.bodyContact {
+    background-color: black;
+}
+
+.bouton {
+    display: block;
+    margin: 10px auto;
+    height: 40px;
+    width: 40%;
+    border-color: #333333;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    -webkit-background-clip: text;
+    background-clip:"";
+    -webkit-text-fill-color: transparent;
+    transition: color 0.2s ease;
+    border-radius: 20px;
+    font-size: 2em;
+
+}
