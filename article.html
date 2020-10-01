@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/ionicons.css" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -17,7 +18,8 @@
         <nav class="navbar">
             <!--topbar-->
             <div class="nav-top-bar">
-                <h1>Spaceship</h1>
+                <div class="smallLogo"><img src="images/logo_mobile.png"></div>
+                <div class="bigLogo"><img src="images/logo_desktop.png" style="height: 10em;"></div> 
                 <div class="menu-burger">
                     <div class="line-top"></div>
                     <div class="line-middle"></div>
@@ -26,32 +28,35 @@
             </div>
             <!--sidebar-->
             <ul class="nav-list">
-                <li class="list-element" id="logo">
-                    <a href="#">Feed</a>
+                <li class="list-element" >
+                    <a href="./feed.html">Feed</a>
                 </li><!-- logo -->
                 <li class="list-element">
-                    <a href="#">Contact</a>
+                    <a href="./contact.html">Contact</a>
                 </li><!-- News -->
                 <li class="list-element">
-                    <a href="#">Team</a>
+                    <a href=".team.html">Team</a>
                 </li><!-- About + contact -->
-                <div class="menu-line"></div>
-                <li class="list-element">
-                    <a href="#">Policy</a>
-                </li><!-- Author page -->
-                <li class="list-element">
-                    <a href="#">Therms</a>
-                </li><!-- Author page -->
-                <li class="list-element">
-                    <a href="#">Insta</a>
-                </li><!-- Author page -->
-                <li class="list-element">
-                    <a href="#">Twitter</a>
-                </li><!-- Author page -->
-                <li class="list-element">
-                    <a href="#">Twitch</a>
-                </li><!-- Author page -->
-            </ul>
+            
+                <ul class="nav-list2">
+                    <li class="list-element">
+                        <a href="#">Policy</a>
+                    </li><!-- Author page -->
+                    <li class="list-element">
+                        <a href="#">Therms</a>
+                    </li><!-- Author page -->
+                    <li class="list-element">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <!--<a class="ion ion-social-instagram": before href="#">Insta</a>-->
+                    </li><!-- Author page -->
+                    <li class="list-element">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </li><!-- Author page -->
+                    <li class="list-element">
+                        <i class="fa fa-twitch" aria-hidden="true"></i>
+                    </li><!-- Author page -->
+                </ul>
+        </ul>
         </nav>
     </header>
     <main class="article">
