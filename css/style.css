@@ -17,6 +17,18 @@
 .bigLogo{
     padding-left: 2em;
 }
+.fa-instagram:before{
+    font-size: 3em;
+    margin-top: 5px;
+}
+.fa-twitter:before {
+    font-size: 3em; 
+    margin-top: 5px;
+}
+.fa-twitch:before{
+    font-size: 3em;
+    margin-top: 5px; 
+}
 /*Sidebar*/
 .nav-list{
     display: flex;
@@ -30,9 +42,6 @@
     -webkit-text-fill-color: transparent;
     transition: color 0.2s ease;
     font-size: 40px;  
-}
-.nav-list li a:hover{
-    color: #FFF;   
 }
 .nav-list2{
     display: none;
@@ -153,10 +162,9 @@ main{
     .nav-list2 li{
         text-align: center;
         margin-top: 5px;
-        height: 60px;
     }
     .nav-list2 li a{
-        font-size: 10px;
+        font-size: 25px;
     }
     .nav-list-active{
         left: 0;
@@ -171,7 +179,6 @@ main{
         color: black;
     }
     .nav-list li a{
-        font-size: 30px;
         color:linear-gradient(to top #8f6aae 38%, #f7c978 100%);
     }
     .menu-line{
