@@ -11,10 +11,13 @@
     width: 100%;
     background-color: black;
 }
-.nav-top-bar h1{
-    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
-    line-height: 80px;
+.smallLogo{
+    display: none;
 }
+.bigLogo{
+    padding-left: 2em;
+}
+
 /*Sidebar*/
 .nav-list{
     display: flex;
@@ -25,18 +28,18 @@
     line-height: 80px;
 }
 .nav-list li a{
-    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
-    -webkit-background-clip: text;
-    background-clip:"";
     -webkit-text-fill-color: transparent;
     transition: color 0.2s ease;
+    font-size: 40px;
     
 }
 .nav-list li a:hover{
     color: #FFF;
     
 }
-
+.nav-list2{
+    display: none;
+}
 /*button-burger*/
 .menu-burger{
     position: absolute;
@@ -105,6 +108,12 @@ main{
     .menu{
         background-color: transparent;
     }
+    .bigLogo{
+        display: none;
+    }
+    .smallLogo{
+        display: block;
+    }
     .nav-list{
         width: 250px;
         height: calc(100vh - 80px);
@@ -113,14 +122,31 @@ main{
         right: -250px;
         display: flex;
         flex-direction: column;
-        background:black;
+        background-color: rgba(0,0,0,0.9);
         padding: 30px 0;
         transition: rigth 0.5s ease-in-out 0.1s;
     
     }
+    .nav-list2{
+        display: flex;
+        flex-direction: column;
+        transition: rigth 0.5s ease-in-out 0.1s;
+        position: absolute;
+        justify-content: flex-end;
+        padding: 5px 60px;
+    }
+    .nav-list2 li{
+        text-align: center;
+        margin-top: 5px;
+        height: 60px;
+    }
+    .nav-list2 li a{
+        font-size: 10px;
+    }
     .nav-list-active{
         left: 0;
         height: 100vh;
+        position: absolute;
     }
     .nav-list li{
         text-align: center;
