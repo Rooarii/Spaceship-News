@@ -30,11 +30,10 @@
     background-clip:"";
     -webkit-text-fill-color: transparent;
     transition: color 0.2s ease;
-    
+    font-size: 40px;  
 }
 .nav-list li a:hover{
-    color: #FFF;
-    
+    color: #FFF;   
 }
 
 /*button-burger*/
