@@ -223,6 +223,23 @@ section{
     padding-bottom: 20px;
     width: 100%;
 }
+/*CROIX */
+.close {
+    background: black;
+    color: var(--color1);
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    padding-top:10px;
+    margin: auto;
+  }
+  .close:hover {
+    background-color: var(--color3);
+  }
 /*Footer*/
 
 .footWrap, .infoNav, .about, .socialMedia{
