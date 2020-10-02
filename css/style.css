@@ -1,8 +1,8 @@
 :root{
-    --color1: #830BFB;
-    --color2: #58BCFD;
-    --color3: #E92297;
-    --color4: #333333;
+    --primary-color-purple: #830BFB;
+    --primary-color-blue: #58BCFD;
+    --primary-color-pink: #E92297;
+    --card-background-color: #333333;
 }
 /*Menu*/
 .navbar{
@@ -80,14 +80,83 @@ main{
   margin: 20px;
   display: flex;
   flex-direction: column;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 20px 24px;
+  
+}
+.draw-border {
+  box-shadow: inset 0 0 0 4px #58cdd1;
+  color: #58afd1;
+  -webkit-transition: color 0.25s 0.0833333333s;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
 }
 
-.card-body:hover {
-    background: var(--color1);
-    background: linear-gradient(180deg, var(--color1) 0%,var(--color2) 48%);
-    
+.draw-border::before,
+.draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0rem;
+  height: 0;
+  bottom: 0;
+  right: 0;
 }
+
+.draw-border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+
+.draw-border::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+
+.draw-border:hover {
+  color: #ffe593;
+}
+
+.draw-border:hover::before,
+.draw-border:hover::after {
+  border-color: #eb196e;
+  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+.draw-border:hover::before {
+  -webkit-transition-delay: 0s, 0s, 0.25s;
+  transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border:hover::after {
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+  transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem 'Roboto Slab', sans-serif;
+  /* padding: 0.75em 2em; */
+  letter-spacing: 0.05rem;
+  margin: 1em;
+  width: 13rem;
+}
+
+.btn:focus {
+  outline: 2px dotted #55d7dc;
+}
+
+/* .card-body:hover {
+    background: var(--primary-color-purple);
+    background: linear-gradient(180deg, var(--primary-color-purple) 0%,var(--primary-color-blue) 48%);
+    
+} */
 .card-img {
     border: none;
     border-radius: 10px 10px 0 0;
@@ -99,35 +168,33 @@ main{
 }
 .card-body {
   padding: 10px 20px;
-  background-color: #333333;
+  background-color: var(--card-background-color);
   
 }
 
 .card-title {
-    color: var(--color2);
+    color: var(--primary-color-blue);
 }
 
-.card-title h3:hover{
+/* .card-title h3:hover{
     color: black;
-}
+} */
 /* .card-button {
     border: none;
     border-radius: 10px;
     height: 35px;
     width: 30%;
     color: white;
-    background: var(--color1);
-    background: linear-gradient(180deg, var(--color1) 0%,var(--color2) 48%);
+    background: var(--primary-color-purple);
+    background: linear-gradient(180deg, var(--primary-color-purple) 0%,var(--primary-color-blue) 48%);
 } */
 
 .card-read-time{
-    color: var(--color3)
+    color: var(--primary-color-pink)
 }
 .card-read-time:hover{
-    color: var(--color1);
+    color: var(--primary-color-purple);
 }
-
-/* background-image: url("http://placekitten.com/200/300"); */
 
 @media only screen and (max-width:700px){
     .menu{
@@ -207,7 +274,7 @@ main{
     .team-card{
         width: 500px;
         height: 400px;
-        background-color: var(--color4);
+        background-color: var(--card-background-color);
         text-align: center;
         margin: 20px;
         margin-top: 20px;
@@ -227,15 +294,15 @@ main{
 
 
 /* .article{
-    background-color: var(--color1);
+    background-color: var(--primary-color-purple);
 } */
 .article-title{
-    color:var(--color1);
+    color:var(--primary-color-purple);
     text-align: center;
     text-decoration: underline;
 }
 .article-container{
-    background-color: var(--color4);
+    background-color: var(--card-background-color);
     width: 60%;
     margin: auto;
     padding: 20px;
@@ -252,13 +319,13 @@ img{
 .text-container{
     width: 80%;
     margin: auto;
-    color: var(--color2);    
+    color: var(--primary-color-blue);    
 }  
 .reading-time{
-    color: var(--color3);
+    color: var(--primary-color-pink);
 }
 .article-title-h2{
-    color: var(--color1);
+    color: var(--primary-color-purple);
     text-decoration: underline;
 }
 section{
@@ -269,7 +336,7 @@ section{
 /*CROIX */
 .close {
     background: black;
-    color: var(--color1);
+    color: var(--primary-color-purple);
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 2em;
     font-weight: bold;
@@ -281,7 +348,7 @@ section{
     margin: auto;
   }
   .close:hover {
-    background-color: var(--color3);
+    background-color: var(--primary-color-pink);
   }
 /*Footer*/
 
@@ -312,7 +379,7 @@ li {
 }
 /*TEAM*/
 .team-title{
-    color: var(--color1);
+    color: var(--primary-color-purple);
     text-align: center;
     font-size: 2em;
 }
@@ -320,7 +387,7 @@ li {
 .team-card{
     /*width: 500px;
     height: 400px;*/
-    background-color: var(--color4);
+    background-color: var(--card-background-color);
     margin: auto;
     text-align: center;
     margin-top: 20px;
@@ -336,11 +403,11 @@ li {
 }
 
 h4{
-    color: var(--color3);
+    color: var(--primary-color-pink);
 }
 
 h2{
-    color: var(--color2);
+    color: var(--primary-color-blue);
     font-size: 30px;
 }
 
@@ -357,7 +424,7 @@ input{
     margin: 10px auto;
     width: 90%;
     margin-bottom: 40px;
-    border-color: #333333;
+    border-color:var(--card-background-color);
     background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
     transition: color 0.2s ease;
     border-radius: 20px;
@@ -369,7 +436,7 @@ textarea{
     margin: 10px auto;
     height: 450px;
     width: 90%;
-    border-color: #333333;
+    border-color:var(--card-background-color);
     background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
     transition: color 0.2s ease;
     border-radius: 20px;
@@ -403,7 +470,7 @@ textarea{
     margin: 10px auto;
     height: 40px;
     width: 40%;
-    border-color: #333333;
+    border-color: var(--card-background-color);
     margin-top: 30px;
     margin-bottom: 30px;
     background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
