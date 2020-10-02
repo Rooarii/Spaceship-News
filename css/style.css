@@ -72,9 +72,10 @@ body{
 /* main */
 main{
     background-color: black;
+    height: 87vh;
 }
 .wrap {
-
+    height: 90vh;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -408,7 +409,7 @@ input{
 textarea{
     display: block;
     margin: 10px auto;
-    height: 450px;
+    height: 200px;
     width: 90%;
     border-color:var(--card-background-color);
     background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
@@ -424,8 +425,7 @@ textarea{
 .contact{
     display: flex;
     justify-content: center; 
-    padding-bottom: 30px;
-    margin-top: 45px;
+    
     background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
     -webkit-background-clip: text;
     background-clip:"";
