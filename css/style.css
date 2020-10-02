@@ -68,7 +68,6 @@ body{
     background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
     border-radius: 2px;
     transition: transform 0.3s, opacity 0.2s;
-    
 }
 /* main */
 main{
@@ -78,7 +77,6 @@ main{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  
 }
 .card {
     border: none;
