@@ -213,6 +213,9 @@ main{
         outline: none;
         transform: rotateZ(45deg) translate(-5px, -6px);
     }
+    .smallLogo-active{
+        transform: rotate(180deg);
+    }
     .team-card{
         width: 500px;
         height: 400px;
