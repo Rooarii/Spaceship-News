@@ -72,18 +72,28 @@ main{
     background-color: black;
 }
 .wrap {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.search{
+    width:40vw;
+    order: 2;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70vw;
+    padding-left: 40px;
 }
 .card {
+    display: flex;
+    flex-flow: row wrap;
     border: none;
     border-radius: 30px;
   width: 200px;
   margin: 20px;
-  display: flex;
-  flex-direction: column;
+
   
 }
 
