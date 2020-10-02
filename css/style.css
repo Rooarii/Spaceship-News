@@ -75,19 +75,32 @@ html{
 /* main */
 main{
     background-color: black;
+    height: 87vh;
 }
 .wrap {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.search{
+    width:40vw;
+    order: 2;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70vw;
+    padding-left: 40px;
 }
 .card {
+    display: flex;
+    flex-flow: row wrap;
     border: none;
     border-radius: 30px;
   width: 200px;
   margin: 20px;
-  display: flex;
-  flex-direction: column;
+
   
 }
 
@@ -279,6 +292,25 @@ section{
     padding-bottom: 20px;
     width: 100%;
 }
+
+.link-article{
+    text-align: end;
+
+}
+a.link:link{
+    color: var(--primary-color-purple);
+}
+a.link:visited{
+    color: var(--primary-color-purple);
+}
+a.link:hover {
+    color: var(--primary-color-blue);
+}
+.author-date{
+    color: var(--primary-color-purple);
+
+}
+
 /*CROIX */
 .close {
     background: black;
@@ -383,7 +415,7 @@ input{
 textarea{
     display: block;
     margin: 10px auto;
-    height: 450px;
+    height: 200px;
     width: 90%;
     border-color:var(--card-background-color);
     background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
@@ -399,8 +431,7 @@ textarea{
 .contact{
     display: flex;
     justify-content: center; 
-    padding-bottom: 30px;
-    margin-top: 45px;
+    
     background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
     -webkit-background-clip: text;
     background-clip:"";
