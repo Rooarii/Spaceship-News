@@ -22,15 +22,15 @@ body{
     padding-left: 2em;
 }
 .fa-instagram:before{
-    font-size: 3em;
+    font-size: 2em;
     margin-top: 5px;
 }
 .fa-twitter:before {
-    font-size: 3em; 
+    font-size: 2em; 
     margin-top: 5px;
 }
 .fa-twitch:before{
-    font-size: 3em;
+    font-size: 2em;
     margin-top: 5px; 
 }
 /*Sidebar*/
@@ -48,6 +48,9 @@ body{
     font-size: 40px;  
 }
 .nav-list2{
+    display: none;
+}
+.topnav{
     display: none;
 }
 /*button-burger*/
@@ -140,6 +143,11 @@ main{
     }
     .smallLogo{
         display: block;
+        transform: rotate(90deg);
+        margin-left: 30px;
+    }
+    .topnav{
+        display: block;
     }
     .nav-list{
         width: 250px;
@@ -152,7 +160,6 @@ main{
         background-color: rgba(0,0,0,0.9);
         padding: 30px 0;
         transition: rigth 0.5s ease-in-out 0.1s;
-    
     }
     .nav-list2{
         display: flex;
@@ -166,7 +173,7 @@ main{
         margin-top: 5px;
     }
     .nav-list2 li a{
-        font-size: 25px;
+        font-size: 20px;
     }
     .nav-list-active{
         left: 0;
@@ -177,11 +184,11 @@ main{
         text-align: center;
         margin-top: 5px;
     }
-    .nav-list li a:hover{
-        color: black;
+    #firstListElements a{
+        font-size: 30px;
     }
-    .nav-list li a{
-        color:linear-gradient(to top #8f6aae 38%, #f7c978 100%);
+    #firstListElements a:hover{
+        color: black;
     }
     .menu-line{
         width: 50%;
@@ -310,7 +317,7 @@ li {
     -webkit-text-fill-color: transparent;
     transition: color 0.2s ease;
     margin-right: 30px ;
-    font-size: 1.5em;
+    
 }
 /*TEAM*/
 .team-title{
@@ -415,7 +422,6 @@ textarea{
     transition: color 0.2s ease;
     border-radius: 20px;
     font-size: 2em;
-
 }
 
 
