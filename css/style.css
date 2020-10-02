@@ -141,6 +141,8 @@ main{
     }
     .smallLogo{
         display: block;
+        transform: rotate(90deg);
+        margin-left: 30px;
     }
     .topnav{
         display: block;
