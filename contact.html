@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/ionicons.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body class="bodyContact">
@@ -18,7 +19,7 @@
         <nav class="navbar">
             <!--topbar-->
             <div class="nav-top-bar">
-                <div class="smallLogo"><img src="images/logo_mobile.png"></div>
+                <div class="smallLogo" class="smallLogo-active"><img src="images/logo_mobile.png"></div>
                 <div class="bigLogo"><a href="./index.html"><img src="images/logo_desktop.png" style="height: 10em;"></a></div> 
                 <div class="menu-burger">
                     <div class="line-top"></div>
@@ -28,34 +29,37 @@
             </div>
             <!--sidebar-->
             <ul class="nav-list">
-                <li class="list-element" >
+                <div class="topnav">
+                    <input class="input" type="text" placeholder="Search..">
+                  </div>
+                <li class="list-element" id="firstListElements">
                     <a href="./feed.html">Feed</a>
                 </li><!-- logo -->
-                <li class="list-element">
+                <li class="list-element" id="firstListElements">
                     <a href="./contact.html">Contact</a>
                 </li><!-- News -->
-                <li class="list-element">
+                <li class="list-element" id="firstListElements">
                     <a href="./team.html">Team</a>
                 </li><!-- About + contact -->
             
-                <ul class="nav-list2">
-                    <li class="list-element">
-                        <a href="#">Policy</a>
-                    </li><!-- Author page -->
-                    <li class="list-element">
-                        <a href="#">Therms</a>
-                    </li><!-- Author page -->
-                    <li class="list-element">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                        <!--<a class="ion ion-social-instagram": before href="#">Insta</a>-->
-                    </li><!-- Author page -->
-                    <li class="list-element">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                    </li><!-- Author page -->
-                    <li class="list-element">
-                        <i class="fa fa-twitch" aria-hidden="true"></i>
-                    </li><!-- Author page -->
-                </ul>
+            <ul class="nav-list2">
+                <li class="list-element">
+                    <a href="#">Policy</a>
+                </li><!-- Author page -->
+                <li class="list-element">
+                    <a href="#">Therms</a>
+                </li><!-- Author page -->
+                <li class="list-element">
+                 <a href="https://www.instagram.com/spaceshipnews/?hl=fr"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <!--<a class="ion ion-social-instagram": before href="#">Insta</a>-->
+                </li><!-- Author page -->
+                <li class="list-element">
+                    <a href="https://twitter.com/spacesh25003953"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </li><!-- Author page -->
+                <li class="list-element">
+                    <a href="https://www.twitch.tv/spaceshipnews"><i class="fa fa-twitch" aria-hidden="true"></i></a>
+                </li><!-- Author page -->
+            </ul>
         </ul>
         </nav>
     </header>
@@ -101,7 +105,7 @@
         </div>
 
     </footer>
-
+    <script src="script.js"></script>
 </body>
 
 </html> 
