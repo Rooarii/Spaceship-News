@@ -278,6 +278,25 @@ section{
     padding-bottom: 20px;
     width: 100%;
 }
+
+.link-article{
+    text-align: end;
+
+}
+a.link:link{
+    color: var(--primary-color-purple);
+}
+a.link:visited{
+    color: var(--primary-color-purple);
+}
+a.link:hover {
+    color: var(--primary-color-blue);
+}
+.author-date{
+    color: var(--primary-color-purple);
+
+}
+
 /*CROIX */
 .close {
     background: black;
