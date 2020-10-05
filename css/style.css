@@ -80,12 +80,13 @@ main{
 .wrap {
     height: 90vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
 }
 .search{
     width:40vw;
-    order: 2;
+
 }
 .cards{
     display: flex;
@@ -98,8 +99,8 @@ main{
     flex-flow: row wrap;
     border: none;
     border-radius: 30px;
-  width: 200px;
-  margin: 20px;
+    width: 200px;
+    margin: 20px;
 
   
 }
