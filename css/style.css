@@ -465,8 +465,6 @@ textarea{
 
 @media screen and (min-width:700px){
     .draw-border {
-        box-shadow: inset 0 0 0 4px #58cdd1;
-        color: #58afd1;
         -webkit-transition: color 0.25s 0.0833333333s;
         transition: color 0.25s 0.0833333333s;
         position: relative;
