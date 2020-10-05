@@ -80,16 +80,17 @@ main{
 .wrap {
     height: 90vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     width: 100%;
 }
 .search{
     width:40vw;
-
+    order:2;
 }
 .cards{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 70vw;
     padding-left: 40px;
@@ -99,7 +100,7 @@ main{
     flex-flow: row wrap;
     border: none;
     border-radius: 30px;
-    width: 200px;
+    width: 30%;
     margin: 20px;
 
   
@@ -127,6 +128,7 @@ main{
 
 .card-title {
     color: var(--primary-color-blue);
+    text-overflow: ellipsis;
 }
 
 /* .card-title h3:hover{
@@ -521,10 +523,6 @@ textarea{
         background: none;
         border: none;
         cursor: pointer;
-        /* line-height: 1.5;
-        font: 700 1.2rem 'Roboto Mono', sans-serif; */
-        /* padding: 0.75em 2em; */
-        letter-spacing: 0.05rem;
         margin: 1em;
         width: 13rem;
       }
