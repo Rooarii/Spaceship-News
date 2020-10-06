@@ -75,74 +75,75 @@ html{
 /* main */
 main{
     background-color: black;
-    height: 87vh;
 }
 .wrap {
-    height: 90vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
 }
-.search{
-    width:40vw;
-    order: 2;
+.search-form{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
 }
+#search{
+    border-color:var(--card-background-color);
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    padding-left: 5%;
+    border-radius: 30px;
+    font-size: 2em;
+    color: var(--primary-color-purple);
+    margin: 10px auto;
+}
+.placeholder{
+    padding-left: 10%;
+    
+}
+::placeholder {
+    color: var(--card-background-color);
+    opacity: 1; /* Firefox */
+  }
 .cards{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    width: 70vw;
-    padding-left: 40px;
+    justify-content: center;
+    width: 60%;
+    height: 80%;
+    margin-bottom: 1%;
+
 }
 .card {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     border: none;
     border-radius: 30px;
-  width: 200px;
-  margin: 20px;
-
-  
+    width: 30%;
+    margin: auto;
 }
-
-/* .card-body:hover {
-    background: var(--primary-color-purple);
-    background: linear-gradient(180deg, var(--primary-color-purple) 0%,var(--primary-color-blue) 48%);
-    
-} */
 .card-img {
     border: none;
     border-radius: 10px 10px 0 0;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
-    /* background-image: url("http://placekitten.com/200/300"); */
     max-width: 100%;
-    max-height: 100%;
 }
 .card-body {
-  padding: 10px 20px;
   background-color: var(--card-background-color);
-  
+  width: 100%;
+  height: inherit 50%;
 }
-
 .card-title {
     color: var(--primary-color-blue);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 5%;
 }
-
-/* .card-title h3:hover{
-    color: black;
-} */
-/* .card-button {
-    border: none;
-    border-radius: 10px;
-    height: 35px;
-    width: 30%;
-    color: white;
-    background: var(--primary-color-purple);
-    background: linear-gradient(180deg, var(--primary-color-purple) 0%,var(--primary-color-blue) 48%);
-} */
-
 .card-read-time{
-    color: var(--primary-color-pink)
+    color: var(--primary-color-pink); 
+    padding-left: 5%;
 }
 .card-read-time:hover{
     color: var(--primary-color-purple);
@@ -247,14 +248,36 @@ main{
         margin: 20px;
     
     }
+    /*Main index.html (Rooarii)*/
+    .placeholder{
+        padding-left: 10%;
+        
+    }
+    ::placeholder {
+        color: var(--card-background-color);
+        opacity: 1; /* Firefox */
+      }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .card {
+        display: flex;
+        flex-flow: column wrap;
+        border: none;
+        border-radius: 30px;
+        width: 80%;
+        padding-bottom: 30px;
+    }
+    .card{
+        
+    }
 }
 
 /*ARTICLE*/
-
-
-/* .article{
-    background-color: var(--primary-color-purple);
-} */
 .article-title{
     color:var(--primary-color-purple);
     text-align: center;
@@ -271,9 +294,10 @@ main{
 }
 img{
     display: flex;
-    margin: auto;
+    /* margin: auto; */
     border-radius: 20px;
-    width: 100%;   
+    width: 100%;
+    height:50%  
 }
 .text-container{
     width: 80%;
@@ -334,6 +358,9 @@ a.link:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
 }
 
 .infoNav {
@@ -345,8 +372,8 @@ a.link:hover {
     background-color: black;
     border-top: solid grey;
     border-width: 1px;
-    position: fixed;
-    bottom: 0;
+    /* position: fixed;
+    bottom: 0; */
     width: 100%;
 }
 
@@ -381,6 +408,7 @@ li {
     background-clip:"";
     -webkit-text-fill-color: transparent;
     transition: color 0.2s ease;
+    margin-right: 30px ;
 }
 
 .tiret {
@@ -433,11 +461,10 @@ h2{
 .divForm{
     width: 60%;
 }
-input{
+.input-form{
     display: block;
     margin: 10px auto;
     width: 90%;
-    margin-bottom: 40px;
     border-color:var(--card-background-color);
     background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
     transition: color 0.2s ease;
@@ -497,9 +524,8 @@ textarea{
 
 
 @media screen and (min-width:700px){
+  
     .draw-border {
-        box-shadow: inset 0 0 0 4px #58cdd1;
-        color: #58afd1;
         -webkit-transition: color 0.25s 0.0833333333s;
         transition: color 0.25s 0.0833333333s;
         position: relative;
@@ -555,12 +581,8 @@ textarea{
         background: none;
         border: none;
         cursor: pointer;
-        /* line-height: 1.5;
-        font: 700 1.2rem 'Roboto Mono', sans-serif; */
-        /* padding: 0.75em 2em; */
-        letter-spacing: 0.05rem;
-        margin: 1em;
-        width: 13rem;
+        /* margin: 1em;
+        width: 13rem; */
       }
       
       .btn:focus {
