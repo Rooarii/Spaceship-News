@@ -334,17 +334,46 @@ a.link:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
 }
 
+.infoNav {
+    justify-content: flex-start;
+    padding-left: 0px;
+}
 .footWrap {
     line-height: 30px;
     background-color: black;
     border-top: solid grey;
     border-width: 1px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
+
+.footer1 {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    padding-left: 30px;
+}
+
+.footer2 {
+    width: 30%;
+}
+
+.about {
+    padding-left: 30px;
+}
+
+.textFooter {
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    -webkit-background-clip: text;
+    background-clip:"";
+    -webkit-text-fill-color: transparent;
+    transition: color 0.2s ease;
+    margin-right: 30px ; 
+}
+
 
 li {
     background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
@@ -352,9 +381,13 @@ li {
     background-clip:"";
     -webkit-text-fill-color: transparent;
     transition: color 0.2s ease;
-    margin-right: 30px ;
-    
 }
+
+.tiret {
+    padding-left: 0%;
+    color: #eb196e;
+}
+
 /*TEAM*/
 .team-title{
     color: var(--primary-color-purple);
