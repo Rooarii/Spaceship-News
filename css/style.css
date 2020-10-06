@@ -94,6 +94,7 @@ main{
     border-radius: 30px;
     font-size: 2em;
     color: var(--primary-color-purple);
+    margin: 10px auto;
 }
 .placeholder{
     padding-left: 10%;
@@ -110,6 +111,8 @@ main{
     justify-content: center;
     width: 60%;
     height: 80%;
+    margin-bottom: 1%;
+
 }
 .card {
     display: flex;
