@@ -1,15 +1,54 @@
-:root{
+:root {
     --primary-color-purple: #830BFB;
     --primary-color-blue: #58BCFD;
     --primary-color-pink: #E92297;
     --card-background-color: #333333;
 }
 
-body{
+body {
     font-family: 'Roboto Mono', monospace;
-}
-html{
     background-color: black;
+}
+
+.light-mode {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    color: black;
+}
+.li-light-mode{
+    color: var(--primary-color-purple);
+}
+input[type='checkbox']{
+    margin-right: .5em;
+    outline: none;
+    position: relative;
+    width: 80px;
+    height: 40px;
+    -webkit-appearance: none;
+    background:  #c6c6c6;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+}
+input:checked[type='checkbox']{
+    background: var(--primary-color-purple);
+}
+input[type='checkbox']:before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    top:0;
+    left:0;
+    background: #fff;
+    transform: scale(1.1);
+    transition: .5s;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+input:checked[type='checkbox']:before{
+    left: 40px;
+}
+html {
+    background-color:white;
 }
 
 li {
@@ -18,62 +57,77 @@ li {
     background-clip:"";
     -webkit-text-fill-color: transparent;
     transition: color 0.2s ease;
-    margin-right: 30px ;
 }
 /*Menu*/
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     width: 100%;
     background-color: black;
 }
-.smallLogo{
+
+.smallLogo {
     display: none;
 }
-.bigLogo{
+
+.bigLogo {
     padding-left: 2em;
 }
-.fa-instagram:before{
+
+.fa-instagram:before {
     font-size: 2em;
     margin-top: 5px;
 }
+
 .fa-twitter:before {
-    font-size: 2em; 
+    font-size: 2em;
     margin-top: 5px;
 }
-.fa-twitch:before{
+
+.fa-twitch:before {
     font-size: 2em;
-    margin-top: 5px; 
+    margin-top: 5px;
 }
+
 /*Sidebar*/
-.nav-list{
+.nav-list {
     display: flex;
     flex-direction: row;
 }
-.nav-list li{
-    margin:0 15px;
-    line-height: 80px;
+
+.nav-list li {
+    margin: 0 15px;
+    line-height: 50px;
 }
-.nav-list li a{
+
+.nav-list li a {
     -webkit-text-fill-color: transparent;
     transition: color 0.2s ease;
-    font-size: 40px;  
+    font-size: 40px;
 }
-.nav-list2{
+
+.nav-list2 {
     display: none;
 }
-.topnav{
+
+.topnav {
     display: none;
 }
+
+.input {
+    border-radius: 5px;
+}
+
 /*button-burger*/
-.menu-burger{
+.menu-burger {
     position: absolute;
     top: 25px;
     right: 50px;
     cursor: pointer;
     display: none;
 }
-.menu-burger > div{
+
+.menu-burger>div {
     width: 25px;
     height: 2px;
     margin: 5px 0;
@@ -81,10 +135,12 @@ li {
     border-radius: 2px;
     transition: transform 0.3s, opacity 0.2s;
 }
+
 /* main */
-main{
-    background-color: black;
+main {
+    /*background-color: black;*/
 }
+
 .wrap {
     display: flex;
     flex-direction: column;
@@ -123,6 +179,7 @@ main{
     /* margin-bottom: 1%; */
     margin: 1%;
 }
+
 .card {
     display: flex;
     flex-flow: column wrap;
@@ -141,6 +198,7 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .card-body {
   background-color: var(--card-background-color);
   width: 100%;
@@ -157,7 +215,8 @@ main{
     color: var(--primary-color-pink); 
     padding-left: 5%;
 }
-.card-read-time:hover{
+
+.card-read-time:hover {
     color: var(--primary-color-purple);
 }
 
@@ -184,18 +243,30 @@ main{
     .menu{
         background-color: transparent;
     }
-    .bigLogo{
+    .switchMode{
+        margin-left: 30%;
+    }
+
+    .navbar {
+        position: fixed;
+    }
+
+    .bigLogo {
         display: none;
     }
-    .smallLogo{
+
+    .smallLogo {
         display: block;
         transform: rotate(90deg);
-        margin-left: 30px;
+        transition: all .5s ease-out;
+        margin-left: 40px;
     }
-    .topnav{
+
+    .topnav {
         display: block;
     }
-    .nav-list{
+
+    .nav-list {
         width: 250px;
         height: calc(100vh - 80px);
         position: fixed;
@@ -203,66 +274,79 @@ main{
         right: -250px;
         display: flex;
         flex-direction: column;
-        background-color: rgba(0,0,0,0.9);
+        background-color: rgba(0, 0, 0, 0.9);
         padding: 30px 0;
         transition: rigth 0.5s ease-in-out 0.1s;
     }
-    .nav-list2{
+
+    .nav-list2 {
         display: flex;
         flex-direction: column;
         transition: rigth 0.5s ease-in-out 0.1s;
         justify-content: flex-end;
         padding: 5px 60px;
     }
-    .nav-list2 li{
+
+    .nav-list2 li {
         text-align: center;
         margin-top: 5px;
     }
-    .nav-list2 li a{
+
+    .nav-list2 li a {
         font-size: 20px;
     }
-    .nav-list-active{
+
+    .nav-list-active {
         left: 0;
         height: 100vh;
-        position: absolute;
+        position: fixed;
     }
-    .nav-list li{
+
+    .nav-list li {
         text-align: center;
         margin-top: 5px;
     }
-    #firstListElements a{
+
+    #firstListElements a {
         font-size: 30px;
     }
-    #firstListElements a:hover{
-        color: black;
-    }
-    .menu-line{
+    .menu-line {
         width: 50%;
         height: 2px;
         background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%);
         margin: auto;
         border-radius: 2px;
     }
-    .menu-burger{
+
+    .menu-burger {
         display: block;
-        
+
     }
-    .toggle.line-top{
+
+    .toggle.line-top {
         outline: none;
         transform: rotateZ(-45deg) translate(-5px, 6px);
     }
-    .toggle.line-middle{
+
+    .toggle.line-middle {
         outline: none;
         opacity: 0;
     }
-    .toggle.line-bottom{
+
+    .toggle.line-bottom {
         outline: none;
         transform: rotateZ(45deg) translate(-5px, -6px);
     }
-    .smallLogo-active{
+
+    .smallLogo-active {
         transform: rotate(180deg);
+        transition: all .5s ease-out;
     }
-    .team-card{
+    .sideBarLightMode{
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    }
+
+    .team-card {
         width: 500px;
         height: 400px;
         background-color: var(--card-background-color);
@@ -273,11 +357,16 @@ main{
         margin-bottom: 50px;
         border-radius: 20px;
     }
-    .container-team-card{
+
+    .container-team-card {
         display: flex;
         flex-wrap: wrap;
         margin: 20px;
-    
+
+    }
+
+    .img-team {
+        height: 300px;
     }
     /*Main index.html (Rooarii)*/
     .placeholder{
@@ -326,7 +415,8 @@ main{
     text-align: center;
     text-decoration: underline;
 }
-.article-container{
+
+.article-container {
     background-color: var(--card-background-color);
     width: 60%;
     margin: auto;
@@ -335,26 +425,31 @@ main{
     margin-bottom: 20px;
     border-radius: 20px;
 }
-img{
+
+img {
     display: flex;
     /* margin: auto; */
     border-radius: 20px;
     width: 100%;
     height:50%  
 }
-.text-container{
+
+.text-container {
     width: 80%;
     margin: auto;
-    color: var(--primary-color-blue);    
-}  
-.reading-time{
+    color: var(--primary-color-blue);
+}
+
+.reading-time {
     color: var(--primary-color-pink);
 }
-.article-title-h2{
+
+.article-title-h2 {
     color: var(--primary-color-purple);
     text-decoration: underline;
 }
-section{
+
+section {
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
@@ -389,17 +484,21 @@ a.link:hover {
     width: 40px;
     height: 40px;
     border-radius: 15px;
-    padding-top:10px;
+    padding-top: 10px;
     margin: auto;
-  }
-  .close:hover {
+}
+
+.close:hover {
     background-color: var(--primary-color-pink);
   }
 
   
 /*Footer*/
 
-.footWrap, .infoNav, .about, .socialMedia{
+.footWrap,
+.infoNav,
+.about,
+.socialMedia {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -417,7 +516,7 @@ a.link:hover {
 }
 .footWrap {
     line-height: 30px;
-    background-color: black;
+    /*background-color: black;*/
     border-top: solid grey;
     border-width: 1px;
     /* position: fixed;
@@ -442,7 +541,7 @@ a.link:hover {
 .textFooter {
     background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
     -webkit-background-clip: text;
-    background-clip:"";
+    background-clip: "";
     -webkit-text-fill-color: transparent;
     transition: color 0.2s ease;
     margin-right: 30px ; 
@@ -457,13 +556,13 @@ a.link:hover {
 }
 
 /*TEAM*/
-.team-title{
+.team-title {
     color: var(--primary-color-purple);
     text-align: center;
     font-size: 2em;
 }
 
-.team-card{
+.team-card {
     /*width: 500px;
     height: 400px;*/
     background-color: var(--card-background-color);
@@ -475,17 +574,21 @@ a.link:hover {
     border-radius: 20px;
 }
 
-.container-team-card{
+.container-team-card {
     display: flex;
     flex-wrap: wrap;
 
 }
 
-h4{
+p {
     color: var(--primary-color-pink);
 }
 
-h2{
+h4 {
+    color: var(--primary-color-pink);
+}
+
+h2 {
     color: var(--primary-color-blue);
     font-size: 30px;
 }
@@ -498,7 +601,8 @@ h2{
     padding-bottom: 100px;
     width: 60%;
 }
-.divForm{
+
+.divForm {
     width: 60%;
 }
 .input-form{
@@ -512,38 +616,38 @@ h2{
     font-size: 2em;
 }
 
-textarea{
+textarea {
     display: block;
     margin: 10px auto;
     height: 200px;
     width: 90%;
-    border-color:var(--card-background-color);
+    border-color: var(--card-background-color);
     background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
     transition: color 0.2s ease;
     border-radius: 20px;
     font-size: 2em;
 }
 
-.fellows{
+.fellows {
     text-align: center;
 }
 
-.contact{
+.contact {
     display: flex;
     justify-content: center; 
     
     background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
     -webkit-background-clip: text;
-    background-clip:"";
+    background-clip: "";
     -webkit-text-fill-color: transparent;
     transition: color 0.2s ease;
     font-size: 3em;
-    
-} 
 
-.bodyContact {
-    background-color: black;
 }
+
+/*.bodyContact {
+    background-color: black;
+}*/
 
 .bouton {
     display: block;
@@ -555,7 +659,7 @@ textarea{
     margin-bottom: 30px;
     background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
     -webkit-background-clip: text;
-    background-clip:"";
+    background-clip: "";
     -webkit-text-fill-color: transparent;
     transition: color 0.2s ease;
     border-radius: 20px;
@@ -568,10 +672,10 @@ textarea{
         -webkit-transition: color 0.25s 0.0833333333s;
         transition: color 0.25s 0.0833333333s;
         position: relative;
-      }
-      
-      .draw-border::before,
-      .draw-border::after {
+    }
+
+    .draw-border::before,
+    .draw-border::after {
         border: 0 solid transparent;
         box-sizing: border-box;
         content: '';
@@ -581,42 +685,42 @@ textarea{
         height: 0;
         bottom: 0;
         right: 0;
-      }
-      
-      .draw-border::before {
+    }
+
+    .draw-border::before {
         border-bottom-width: 4px;
         border-left-width: 4px;
-      }
-      
-      .draw-border::after {
+    }
+
+    .draw-border::after {
         border-top-width: 4px;
         border-right-width: 4px;
-      }
-      
-      .draw-border:hover {
+    }
+
+    .draw-border:hover {
         color: #ffe593;
-      }
-      
-      .draw-border:hover::before,
-      .draw-border:hover::after {
+    }
+
+    .draw-border:hover::before,
+    .draw-border:hover::after {
         border-color: #eb196e;
         -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
         transition: border-color 0s, width 0.25s, height 0.25s;
         width: 100%;
         height: 100%;
-      }
-      
-      .draw-border:hover::before {
+    }
+
+    .draw-border:hover::before {
         -webkit-transition-delay: 0s, 0s, 0.25s;
         transition-delay: 0s, 0s, 0.25s;
-      }
-      
-      .draw-border:hover::after {
+    }
+
+    .draw-border:hover::after {
         -webkit-transition-delay: 0s, 0.25s, 0s;
         transition-delay: 0s, 0.25s, 0s;
-      }
-      
-      .btn {
+    }
+
+    .btn {
         background: none;
         border: none;
         cursor: pointer;
@@ -626,6 +730,6 @@ textarea{
       
       .btn:focus {
         outline: 2px dotted #55d7dc;
-      }
-      
+    }
+
 }
