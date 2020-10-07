@@ -395,13 +395,6 @@ main {
         width: 80%;
         padding-bottom: 30px;
     }
-    .cards-reduced{
-       align-content:  flex-end ;
-       width: 50%;
-    }
-    .wrap-reduced{
-        align-items: end;
-    }
     .footer1 {
         display: flex;
         flex-direction: column;

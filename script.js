@@ -2,14 +2,10 @@
 var burger = document.querySelector('.menu-burger');
 var sidebar = document.querySelector('.nav-list');
 var mobileLogo = document.querySelector('.smallLogo');
-let cards = document.querySelector('.cards');
-let wrap = document.querySelector('.wrap');
 burger.addEventListener('click', () => {
     sidebar.classList.toggle('nav-list-active');
     burger.classList.toggle('toggle');
     mobileLogo.classList.toggle('smallLogo-active');
-    cards.classList.toggle('cards-reduced');
-    wrap.classList.toggle('wrap-reduced');
 })
 //Dark mode//
 const lightMode = document.querySelector('.lightMode');
