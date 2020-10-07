@@ -270,7 +270,30 @@ main{
         margin: 20px;
     
     }
-
+    /*Main index.html (Rooarii)*/
+    .placeholder{
+        padding-left: 10%;
+        
+    }
+    ::placeholder {
+        color: var(--card-background-color);
+        opacity: 1; /* Firefox */
+      }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .card {
+        display: flex;
+        flex-flow: column wrap;
+        border: none;
+        border-radius: 30px;
+        width: 80%;
+        padding-bottom: 30px;
+    }
     .footer1 {
         display: flex;
         flex-direction: column;
