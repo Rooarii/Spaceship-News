@@ -11,6 +11,15 @@ body{
 html{
     background-color: black;
 }
+
+li {
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    -webkit-background-clip: text;
+    background-clip:"";
+    -webkit-text-fill-color: transparent;
+    transition: color 0.2s ease;
+    margin-right: 30px ;
+}
 /*Menu*/
 .navbar{
     display: flex;
@@ -294,8 +303,20 @@ main{
         width: 80%;
         padding-bottom: 30px;
     }
-    .card{
-        
+    .footer1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tiret {
+        display: none;
+    }
+    .about {
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 }
 
@@ -374,6 +395,8 @@ a.link:hover {
   .close:hover {
     background-color: var(--primary-color-pink);
   }
+
+  
 /*Footer*/
 
 .footWrap, .infoNav, .about, .socialMedia{
@@ -400,21 +423,20 @@ a.link:hover {
     /* position: fixed;
     bottom: 0; */
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .footer1 {
     display: flex;
     flex-direction: row;
-    width: 70%;
     padding-left: 30px;
 }
 
-.footer2 {
-    width: 30%;
+.socialMedia {
+    padding-left: 40px;
 }
-
 .about {
-    padding-left: 30px;
+    padding-left: 0px;
 }
 
 .textFooter {
@@ -427,18 +449,11 @@ a.link:hover {
 }
 
 
-li {
-    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
-    -webkit-background-clip: text;
-    background-clip:"";
-    -webkit-text-fill-color: transparent;
-    transition: color 0.2s ease;
-    margin-right: 30px ;
-}
 
 .tiret {
     padding-left: 0%;
-    color: #eb196e;
+    padding-right: 30px;
+    color: #E92297;
 }
 
 /*TEAM*/
@@ -546,7 +561,6 @@ textarea{
     border-radius: 20px;
     font-size: 2em;
 }
-
 
 @media screen and (min-width:700px){
   
