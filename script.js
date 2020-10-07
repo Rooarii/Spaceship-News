@@ -1,14 +1,27 @@
+//Menu-Burger//
 var burger = document.querySelector('.menu-burger');
 var sidebar = document.querySelector('.nav-list');
 var mobileLogo = document.querySelector('.smallLogo');
-
 burger.addEventListener('click', () => {
     sidebar.classList.toggle('nav-list-active');
     burger.classList.toggle('toggle');
     mobileLogo.classList.toggle('smallLogo-active');
 })
+//Dark mode//
+const lightMode = document.querySelector('.lightMode');
+const mainlighModer = document.querySelector('.wrap');
+const footerLightMode = document.querySelector('.footWrap');
+const navLightMode = document.querySelector('.navbar');
+const sideBarLightMode = document.querySelector('.nav-list');
+const titleNavLigthMode = document.querySelectorAll('li');
 
-
+lightMode.addEventListener('click', ()=> {
+    footerLightMode.classList.toggle('light-mode');
+    mainlighModer.classList.toggle('light-mode');
+    navLightMode.classList.toggle('light-mode');
+    sideBarLightMode.classList.toggle('sideBarLightMode');
+    titleNavLigthMode.classList.toggle('li-light-mod');
+})
 // cards in main
 
 const wrap = document.querySelector(".wrap");
