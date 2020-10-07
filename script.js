@@ -24,49 +24,49 @@ lightMode.addEventListener('click', ()=> {
 })
 // cards in main
 
-const wrap = document.querySelector(".wrap");
-/** card structure
-/*  article
-/*      card
-/*          img
-/*          card-body
-/*              card-title
-/*              card-button
-*/
-function createCard(title, picture) {
-    const article = document.createElement("article");
-    article.classList.add("article");
-    wrap.appendChild(article);
+// const wrap = document.querySelector(".wrap");
+// /** card structure
+// /*  article
+// /*      card
+// /*          img
+// /*          card-body
+// /*              card-title
+// /*              card-button
+// */
+// function createCard(title, picture) {
+//     const article = document.createElement("article");
+//     article.classList.add("article");
+//     wrap.appendChild(article);
 
-    const card = document.createElement("div");
-    card.classList.add("card");
-    article.appendChild(card);
+//     const card = document.createElement("div");
+//     card.classList.add("card");
+//     article.appendChild(card);
 
-    const img = document.createElement("img");
-    img.style.backgroundImage = `url(${picture })`;
-    img.classList.add("card-img");
-    card.appendChild(img);
+//     const img = document.createElement("img");
+//     img.style.backgroundImage = `url(${picture })`;
+//     img.classList.add("card-img");
+//     card.appendChild(img);
     
-    const cardBody = document.createElement("div");
-    cardBody.classList.add("card-body");
-    card.appendChild(cardBody);
+//     const cardBody = document.createElement("div");
+//     cardBody.classList.add("card-body");
+//     card.appendChild(cardBody);
 
-    const cardTitle = document.createElement("h3");
-    cardTitle.classList.add("card-title");
-    cardTitle.innerHTML = title;
-    cardBody.appendChild(cardTitle);
+//     const cardTitle = document.createElement("h3");
+//     cardTitle.classList.add("card-title");
+//     cardTitle.innerHTML = title;
+//     cardBody.appendChild(cardTitle);
 
-    const cardButton = document.createElement("button");
-    cardButton.classList.add("card-button");
-    cardButton.innerHTML = "Read";
-    cardBody.appendChild(cardButton);
-}
-function loadCards (){
-    for (let i = 0; i < content.length; i++) {
-        createCard(content[i].name, content[i].picture);
-      }      
-}
-window.onload = loadCards;
+//     const cardButton = document.createElement("button");
+//     cardButton.classList.add("card-button");
+//     cardButton.innerHTML = "Read";
+//     cardBody.appendChild(cardButton);
+// }
+// function loadCards (){
+//     for (let i = 0; i < content.length; i++) {
+//         createCard(content[i].name, content[i].picture);
+//       }      
+// }
+// window.onload = loadCards;
 
 
 // content
