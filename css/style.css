@@ -8,6 +8,7 @@
 body {
     font-family: 'Roboto Mono', monospace;
     background-color: black;
+    cursor: url('data:image/x-icon;base64,AAACAAEAICACAAAAAAAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAP8IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADzwAAA88AAMwAzADMAMwAz//MAM//zAD///wA///8ADz88AA8/PAAD//AAA//wAADAwAAAwMAAAwAwAAMAMABAAAAAYAAAAHAAAAAAAAAA///////////////////////////////////////////////////////////+AB///gAf/4AAAH+AAAB/gAAAf4AAAH+AAAB/gAAAf4AAAH+AAAB/4AAB/+AAAf/4AAf/+AAH//geB/94Hgf/OH+H/xh/h/8P////B////wP///8='), auto;
 }
 
 .light-mode {
@@ -182,7 +183,7 @@ main {
 
 .card {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     border: none;
     border-radius: 30px;
     width: 30%;
@@ -193,7 +194,7 @@ main {
     border-radius: 10px 10px 0 0;
     background-position: center;
     max-width: 100%;
-    height: 150px;
+    height: 200px;
     background-image: url("../images/article1.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -201,15 +202,16 @@ main {
 
 .card-body {
   background-color: var(--card-background-color);
-  width: 100%;
-  height: inherit 50%;
+  /* width: 100%; */
+  height: 50%;
 }
 .card-title {
     color: var(--primary-color-blue);
-    white-space: nowrap;
+    /* white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; */
     padding-left: 5%;
+    overflow-wrap: break-word;
 }
 .card-read-time{
     color: var(--primary-color-pink); 
@@ -726,7 +728,7 @@ textarea {
     .btn {
         background: none;
         border: none;
-        cursor: pointer;
+        cursor: url(https://cur.cursors-4u.net/mechanics/mec-1/mec8.cur), auto;
         /* margin: 1em;
         width: 13rem; */
       }
