@@ -11,6 +11,15 @@ body{
 html{
     background-color: black;
 }
+
+li {
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    -webkit-background-clip: text;
+    background-clip:"";
+    -webkit-text-fill-color: transparent;
+    transition: color 0.2s ease;
+    margin-right: 30px ;
+}
 /*Menu*/
 .navbar{
     display: flex;
