@@ -20,7 +20,7 @@ input {
     background:none;
     line-height:1;
      
-    * Browsers have different default form fonts */
+    /* Browsers have different default form fonts */
     font-size:13px;
     font-family:Arial; 
 }

@@ -10,6 +10,9 @@ body {
     background-color: black;
     cursor: url('data:image/x-icon;base64,AAACAAEAICACAAAAAAAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAP8IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADzwAAA88AAMwAzADMAMwAz//MAM//zAD///wA///8ADz88AA8/PAAD//AAA//wAADAwAAAwMAAAwAwAAMAMABAAAAAYAAAAHAAAAAAAAAA///////////////////////////////////////////////////////////+AB///gAf/4AAAH+AAAB/gAAAf4AAAH+AAAB/gAAAf4AAAH+AAAB/4AAB/+AAAf/4AAf/+AAH//geB/94Hgf/OH+H/xh/h/8P////B////wP///8='), auto;
 }
+a {
+    cursor: url(https://cur.cursors-4u.net/mechanics/mec-1/mec8.cur), auto;
+}
 
 .light-mode {
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
@@ -138,9 +141,9 @@ li {
 }
 
 /* main */
-main {
+/* main {
     /*background-color: black;*/
-}
+
 
 .wrap {
     display: flex;
@@ -158,9 +161,11 @@ main {
     background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
     padding-left: 5%;
     border-radius: 30px;
-    /* font-size: 2em; */
+    font-size: 16px;
     color: var(--primary-color-purple);
     margin: 10px auto;
+    width: 480px;
+    height: 44px;
 }
 .placeholder{
     padding-left: 10%;
@@ -203,7 +208,7 @@ main {
 .card-body {
   background-color: var(--card-background-color);
   /* width: 100%; */
-  height: 50%;
+  height: 140px;
 }
 .card-title {
     color: var(--primary-color-blue);
@@ -211,7 +216,11 @@ main {
     overflow: hidden;
     text-overflow: ellipsis; */
     padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
     overflow-wrap: break-word;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .card-read-time{
     color: var(--primary-color-pink); 
@@ -728,7 +737,6 @@ textarea {
     .btn {
         background: none;
         border: none;
-        cursor: url(https://cur.cursors-4u.net/mechanics/mec-1/mec8.cur), auto;
         /* margin: 1em;
         width: 13rem; */
       }
