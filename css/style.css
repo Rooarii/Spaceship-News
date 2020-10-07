@@ -4,18 +4,38 @@
     --primary-color-pink: #E92297;
     --card-background-color: #333333;
 }
-
+html{
+    background: black;
+}
 body {
     font-family: 'Roboto Mono', monospace;
-    background-color: black;
 }
-
-.light-mode {
+video{
+    display: block;
+    position: absolute;
+    width: 100%;
+    z-index: -10;
+    height: fit-content;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+.video-hidden{
+    display: none;
+}
+.light-modde {
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     color: black;
 }
 .li-light-mode{
-    color: var(--primary-color-purple);
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    background-clip:"";
+    -webkit-text-fill-color: transparent;
+    transition: color 0.2s ease;
 }
 input[type='checkbox']{
     margin-right: .5em;
@@ -47,11 +67,7 @@ input[type='checkbox']:before{
 input:checked[type='checkbox']:before{
     left: 40px;
 }
-html {
-    background-color:white;
-}
-
-li {
+.list-element {
     background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
     -webkit-background-clip: text;
     background-clip:"";

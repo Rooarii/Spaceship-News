@@ -13,15 +13,20 @@ const mainlighModer = document.querySelector('.wrap');
 const footerLightMode = document.querySelector('.footWrap');
 const navLightMode = document.querySelector('.navbar');
 const sideBarLightMode = document.querySelector('.nav-list');
-const titleNavLigthMode = document.querySelectorAll('li');
+const titleNavLigthMode = document.getElementsByTagName('a');
+const videoView = document.getElementsByClassName('videoWrap')[0];
+console.log(videoView);
 
 lightMode.addEventListener('click', ()=> {
     footerLightMode.classList.toggle('light-mode');
     mainlighModer.classList.toggle('light-mode');
     navLightMode.classList.toggle('light-mode');
     sideBarLightMode.classList.toggle('sideBarLightMode');
-    titleNavLigthMode.classList.toggle('li-light-mod');
+    videoView.classList.toggle('video-hidden');
 })
+
+ 
+
 // cards in main
 
 // const wrap = document.querySelector(".wrap");
