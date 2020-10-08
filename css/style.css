@@ -26,7 +26,17 @@ video{
 .video-hidden{
     display: none;
 }
-.light-modde {
+/* font + background + cursor changed globally */
+body{
+    background-color: black;
+    cursor: url('data:image/x-icon;base64,AAACAAEAICACAAAAAAAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAP8IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADzwAAA88AAMwAzADMAMwAz//MAM//zAD///wA///8ADz88AA8/PAAD//AAA//wAADAwAAAwMAAAwAwAAMAMABAAAAAYAAAAHAAAAAAAAAA///////////////////////////////////////////////////////////+AB///gAf/4AAAH+AAAB/gAAAf4AAAH+AAAB/gAAAf4AAAH+AAAB/4AAB/+AAAf/4AAf/+AAH//geB/94Hgf/OH+H/xh/h/8P////B////wP///8='), auto;
+}
+/* cursor change on hover */
+a {
+    cursor: url(https://cur.cursors-4u.net/mechanics/mec-1/mec8.cur), auto;
+}
+/* light mode */
+.light-mode {
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     color: black;
 }
@@ -74,7 +84,7 @@ input:checked[type='checkbox']:before{
     -webkit-text-fill-color: transparent;
     transition: color 0.2s ease;
 }
-/*Menu*/
+/*Menu (Aurélien)*/
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -151,11 +161,7 @@ input:checked[type='checkbox']:before{
     transition: transform 0.3s, opacity 0.2s;
 }
 
-/* main */
-main {
-    /*background-color: black;*/
-}
-
+/* main Cards (Rooarii)*/
 .wrap {
     display: flex;
     flex-direction: column;
@@ -172,13 +178,14 @@ main {
     background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
     padding-left: 5%;
     border-radius: 30px;
-    font-size: 2em;
+    font-size: 16px;
     color: var(--primary-color-purple);
     margin: 10px auto;
+    width: 480px;
+    height: 44px;
 }
 .placeholder{
     padding-left: 10%;
-    
 }
 ::placeholder {
     color: var(--card-background-color);
@@ -194,10 +201,9 @@ main {
     /* margin-bottom: 1%; */
     margin: 1%;
 }
-
 .card {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     border: none;
     border-radius: 30px;
     width: 30%;
@@ -208,33 +214,35 @@ main {
     border-radius: 10px 10px 0 0;
     background-position: center;
     max-width: 100%;
-    height: 150px;
+    height: 200px;
     background-image: url("../images/article1.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .card-body {
   background-color: var(--card-background-color);
-  width: 100%;
-  height: inherit 50%;
+  /* width: 100%; */
+  height: 140px;
 }
 .card-title {
     color: var(--primary-color-blue);
-    white-space: nowrap;
+    /* white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; */
     padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    overflow-wrap: break-word;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .card-read-time{
     color: var(--primary-color-pink); 
     padding-left: 5%;
 }
-
 .card-read-time:hover {
     color: var(--primary-color-purple);
 }
-
 .card1{
     background-image: url("../images/article1.jpeg");
 }
@@ -254,178 +262,7 @@ main {
     background-image: url("../images/article6.jpeg");
 }
 
-@media only screen and (max-width:700px){
-    .menu{
-        background-color: transparent;
-    }
-    .switchMode{
-        margin-left: 30%;
-    }
-
-    .navbar {
-        position: fixed;
-        background: black;
-    }
-
-    .bigLogo {
-        display: none;
-    }
-
-    .smallLogo {
-        display: block;
-        transform: rotate(90deg);
-        transition: all .5s ease-out;
-        margin-left: 40px;
-    }
-
-    .topnav {
-        display: block;
-    }
-
-    .nav-list {
-        width: 250px;
-        height: calc(100vh - 80px);
-        position: fixed;
-        top: 80px;
-        right: -250px;
-        display: flex;
-        flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.9);
-        padding: 30px 0;
-        transition: rigth 0.5s ease-in-out 0.1s;
-    }
-
-    .nav-list2 {
-        display: flex;
-        flex-direction: column;
-        transition: rigth 0.5s ease-in-out 0.1s;
-        justify-content: flex-end;
-        padding: 5px 60px;
-    }
-
-    .nav-list2 li {
-        text-align: center;
-        margin-top: 5px;
-    }
-
-    .nav-list2 li a {
-        font-size: 20px;
-    }
-
-    .nav-list-active {
-        left: 0;
-        height: 100vh;
-        position: fixed;
-    }
-
-    .nav-list li {
-        text-align: center;
-        margin-top: 5px;
-    }
-
-    #firstListElements a {
-        font-size: 30px;
-    }
-    .menu-line {
-        width: 50%;
-        height: 2px;
-        background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%);
-        margin: auto;
-        border-radius: 2px;
-    }
-
-    .menu-burger {
-        display: block;
-
-    }
-
-    .toggle.line-top {
-        outline: none;
-        transform: rotateZ(-45deg) translate(-5px, 6px);
-    }
-
-    .toggle.line-middle {
-        outline: none;
-        opacity: 0;
-    }
-
-    .toggle.line-bottom {
-        outline: none;
-        transform: rotateZ(45deg) translate(-5px, -6px);
-    }
-
-    .smallLogo-active {
-        transform: rotate(180deg);
-        transition: all .5s ease-out;
-    }
-    .sideBarLightMode{
-        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-    }
-
-    .team-card {
-        width: 500px;
-        height: 400px;
-        background-color: var(--card-background-color);
-        text-align: center;
-        margin: 20px;
-        margin-top: 20px;
-        padding: 50px;
-        margin-bottom: 50px;
-        border-radius: 20px;
-    }
-
-    .container-team-card {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 20px;
-
-    }
-
-    .img-team {
-        height: 300px;
-    }
-    /*Main index.html (Rooarii)*/
-    .placeholder{
-        padding-left: 10%;
-        
-    }
-    ::placeholder {
-        color: var(--card-background-color);
-        opacity: 1; /* Firefox */
-      }
-    .cards{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-    }
-    .card {
-        display: flex;
-        flex-flow: column wrap;
-        border: none;
-        border-radius: 30px;
-        width: 80%;
-        padding-bottom: 30px;
-    }
-    .footer1 {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .tiret {
-        display: none;
-    }
-    .about {
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-}
-
-/*ARTICLE*/
+/*ARTICLE (Maxime)*/
 .article-title{
     color:var(--primary-color-purple);
     text-align: center;
@@ -441,39 +278,33 @@ main {
     margin-bottom: 20px;
     border-radius: 20px;
 }
-
+/* can you use class instead of tags (Maxime)*/
 img {
     display: flex;
-    /* margin: auto; */
+    margin: auto;
     border-radius: 20px;
     width: 100%;
     height:50%  
 }
-
 .text-container {
     width: 80%;
     margin: auto;
     color: var(--primary-color-blue);
 }
-
 .reading-time {
     color: var(--primary-color-pink);
 }
-
 .article-title-h2 {
     color: var(--primary-color-purple);
     text-decoration: underline;
 }
-
 section {
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
 }
-
 .link-article{
     text-align: end;
-
 }
 a.link:link{
     color: var(--primary-color-purple);
@@ -486,9 +317,7 @@ a.link:hover {
 }
 .author-date{
     color: var(--primary-color-purple);
-
 }
-
 /*CROIX */
 .close {
     background: black;
@@ -562,15 +391,11 @@ a.link:hover {
     transition: color 0.2s ease;
     margin-right: 30px ; 
 }
-
-
-
 .tiret {
     padding-left: 0%;
     padding-right: 30px;
     color: #E92297;
 }
-
 /*TEAM*/
 .team-title {
     color: var(--primary-color-purple);
@@ -589,21 +414,19 @@ a.link:hover {
     margin-bottom: 50px;
     border-radius: 20px;
 }
-
 .container-team-card {
     display: flex;
     flex-wrap: wrap;
-
 }
-
+/* can you use class instead of tags  (Samson)*/
 p {
     color: var(--primary-color-pink);
 }
-
+/* can you use class instead of tags (Samson)*/
 h4 {
     color: var(--primary-color-pink);
 }
-
+/* can you use class instead of tags  (Samson)*/
 h2 {
     color: var(--primary-color-blue);
     font-size: 30px;
@@ -631,7 +454,7 @@ h2 {
     border-radius: 20px;
     font-size: 2em;
 }
-
+/* can you use class instead of tags (Samson) */
 textarea {
     display: block;
     margin: 10px auto;
@@ -661,10 +484,6 @@ textarea {
 
 }
 
-/*.bodyContact {
-    background-color: black;
-}*/
-
 .bouton {
     display: block;
     margin: 10px auto;
@@ -680,72 +499,4 @@ textarea {
     transition: color 0.2s ease;
     border-radius: 20px;
     font-size: 2em;
-}
-
-@media screen and (min-width:700px){
-  
-    .draw-border {
-        -webkit-transition: color 0.25s 0.0833333333s;
-        transition: color 0.25s 0.0833333333s;
-        position: relative;
-    }
-
-    .draw-border::before,
-    .draw-border::after {
-        border: 0 solid transparent;
-        box-sizing: border-box;
-        content: '';
-        pointer-events: none;
-        position: absolute;
-        width: 0rem;
-        height: 0;
-        bottom: 0;
-        right: 0;
-    }
-
-    .draw-border::before {
-        border-bottom-width: 4px;
-        border-left-width: 4px;
-    }
-
-    .draw-border::after {
-        border-top-width: 4px;
-        border-right-width: 4px;
-    }
-
-    .draw-border:hover {
-        color: #ffe593;
-    }
-
-    .draw-border:hover::before,
-    .draw-border:hover::after {
-        border-color: #eb196e;
-        -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
-        transition: border-color 0s, width 0.25s, height 0.25s;
-        width: 100%;
-        height: 100%;
-    }
-
-    .draw-border:hover::before {
-        -webkit-transition-delay: 0s, 0s, 0.25s;
-        transition-delay: 0s, 0s, 0.25s;
-    }
-
-    .draw-border:hover::after {
-        -webkit-transition-delay: 0s, 0.25s, 0s;
-        transition-delay: 0s, 0.25s, 0s;
-    }
-
-    .btn {
-        background: none;
-        border: none;
-        cursor: pointer;
-        /* margin: 1em;
-        width: 13rem; */
-      }
-      
-      .btn:focus {
-        outline: 2px dotted #55d7dc;
-    }
-
 }

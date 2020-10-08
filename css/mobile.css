@@ -1,0 +1,173 @@
+/* mobile breakpoint */
+@media only screen and (max-width:700px){
+    .menu{
+        background-color: transparent;
+    }
+    .switchMode{
+        margin-left: 30%;
+    }
+
+    .navbar {
+        position: fixed;
+    }
+
+    .bigLogo {
+        display: none;
+    }
+
+    .smallLogo {
+        display: block;
+        transform: rotate(90deg);
+        transition: all .5s ease-out;
+        margin-left: 40px;
+    }
+
+    .topnav {
+        display: block;
+    }
+
+    .nav-list {
+        width: 250px;
+        height: calc(100vh - 80px);
+        position: fixed;
+        top: 80px;
+        right: -250px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 30px 0;
+        transition: rigth 0.5s ease-in-out 0.1s;
+    }
+
+    .nav-list2 {
+        display: flex;
+        flex-direction: column;
+        transition: rigth 0.5s ease-in-out 0.1s;
+        justify-content: flex-end;
+        padding: 5px 60px;
+    }
+
+    .nav-list2 li {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .nav-list2 li a {
+        font-size: 20px;
+    }
+
+    .nav-list-active {
+        left: 0;
+        height: 100vh;
+        position: fixed;
+    }
+
+    .nav-list li {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    #firstListElements a {
+        font-size: 30px;
+    }
+    .menu-line {
+        width: 50%;
+        height: 2px;
+        background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%);
+        margin: auto;
+        border-radius: 2px;
+    }
+
+    .menu-burger {
+        display: block;
+
+    }
+
+    .toggle.line-top {
+        outline: none;
+        transform: rotateZ(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle.line-middle {
+        outline: none;
+        opacity: 0;
+    }
+
+    .toggle.line-bottom {
+        outline: none;
+        transform: rotateZ(45deg) translate(-5px, -6px);
+    }
+
+    .smallLogo-active {
+        transform: rotate(180deg);
+        transition: all .5s ease-out;
+    }
+    .sideBarLightMode{
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    }
+
+    .team-card {
+        width: 500px;
+        height: 400px;
+        background-color: var(--card-background-color);
+        text-align: center;
+        margin: 20px;
+        margin-top: 20px;
+        padding: 50px;
+        margin-bottom: 50px;
+        border-radius: 20px;
+    }
+
+    .container-team-card {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+
+    }
+
+    .img-team {
+        height: 300px;
+    }
+    /*Main index.html (Rooarii)*/
+    .wrap{
+        padding-top: 123px;
+    }
+    .placeholder{
+        padding-left: 10%;
+        
+    }
+    ::placeholder {
+        color: var(--card-background-color);
+        opacity: 1; /* Firefox */
+      }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+    }
+    .card {
+        display: flex;
+        flex-flow: column wrap;
+        border: none;
+        border-radius: 30px;
+        width: 80%;
+        padding-bottom: 30px;
+    }
+    .footer1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tiret {
+        display: none;
+    }
+    .about {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
