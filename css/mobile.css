@@ -225,4 +225,7 @@
     .main-article{
         padding-top: 10%;
     }
+    .text-contact{
+        display: none;
+    }
 }
