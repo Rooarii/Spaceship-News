@@ -170,4 +170,23 @@
         margin-top: 0px;
         margin-bottom: 0px;
     }
+/* contact */
+    .mainContact {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 129px;
+    }
+    .divForm{
+        width: 100%;
+    }
+    .input-form{
+        width: 80%;
+    }
+    .textareaForm{
+        width: 80%;
+    }
+    .divImg {
+        width: 80%;
+        padding-bottom: 2%;
+    }
 }
