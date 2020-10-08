@@ -4,23 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1</title>
+    <title>Spaceship</title>
     <meta name="description" content="">
     <meta name="contributors" content="Aurélien LAMARRE, Maxime LEBERRE, Rooarii MANUEL, Samson CORBIERE">
+    <link rel="shortcut icon" href="fa fa-space-shuttle">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/ionicons.css" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/desktop.css">
+    <link rel="stylesheet" href="./css/mobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="body">
     <header class="header-wrap">
         <nav class="navbar">
             <!--topbar-->
             <div class="nav-top-bar">
-                <div class="smallLogo" class="smallLogo-active"><img src="images/logo_mobile.png"></div>
-                <div class="bigLogo"><a href="./index.html"><img src="images/logo_desktop.png" style="height: 10em;"></a></div> 
+                <div class="smallLogo" class="smallLogo-active"><img src="images/logo-mobile-sf2.png"></div>
+                <div class="bigLogo"><a href="./index.html"><img src="images/logo-desktop-sf2.png" style="height: 10em;"></a></div> 
                 <div class="menu-burger">
                     <div class="line-top"></div>
                     <div class="line-middle"></div>
@@ -29,9 +31,6 @@
             </div>
             <!--sidebar-->
             <ul class="nav-list">
-                <div class="topnav">
-                    <input class="input" type="text" placeholder="Search..">
-                  </div>
                 <li class="list-element" id="firstListElements">
                     <a href="./feed.html">Feed</a>
                 </li><!-- logo -->
@@ -41,6 +40,9 @@
                 <li class="list-element" id="firstListElements">
                     <a href="./team.html">Team</a>
                 </li><!-- About + contact -->
+                <div class="switchMode">
+                    <input class="lightMode" type="checkbox" name=''>
+                </div>
             
             <ul class="nav-list2">
                 <li class="list-element">
@@ -70,48 +72,115 @@
         </form>
         <div class="cards">
                     <div class="card btn draw-border">
-                        <div class="card-img card1-img"></div>
-                        <!-- <img class="card-img" src="./images/article1.jpeg"> -->
-                        <div class="card-body">
-                            <p class="card-title">About that space illustration you keep seeing around</p>
-                            <p class= "card-read-time">10 min</p>
-                        </div>
+                        <a href="./article.html">
+                            <div class="card-img card1-img"></div>
+                            <!-- <img class="card-img" src="./images/article1.jpeg"> -->
+                            <div class="card-body">
+                                <p class="card-title">About that space illustration you keep seeing around</p>
+                                <p class= "card-read-time">10 min</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="card btn draw-border">
-                        <div class="card-img card2"></div>
-                        <div class="card-body">
-                            <p class="card-title">Why ‘Contact’ Is the Most Important Space Movie Ever Made</p>
-                            <p class= "card-read-time">6 min</p>
-                        </div>
+                        <a href="./article.html">
+                            <div class="card-img card2"></div>
+                            <div class="card-body">
+                                <p class="card-title">Why ‘Contact’ Is the Most Important Space Movie Ever Made</p>
+                                <p class= "card-read-time">6 min</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="card btn draw-border">
-                        <div class="card-img card3"></div>
-                        <div class="card-body">
-                            <p class="card-title">My Journey to the Edge of Space</p>
-                            <p class= "card-read-time">30 min</p>
-                        </div>
+                        <a href="./article.html">
+                            <div class="card-img card3"></div>
+                            <div class="card-body">
+                                <p class="card-title">My Journey to the Edge of Space</p>
+                                <p class= "card-read-time">30 min</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="card btn draw-border">
-                        <div class="card-img card4"></div>
-                        <div class="card-body">
-                            <p class="card-title">Has NASA’s Kepler Mission Discovered an Alien Megastructure?</p>
-                            <p class= "card-read-time">20 min</p>
-                        </div>
+                        <a href="./article.html">
+                            <div class="card-img card4"></div>
+                            <div class="card-body">
+                                <p class="card-title">Has NASA’s Kepler Mission Discovered an Alien Megastructure?</p>
+                                <p class= "card-read-time">20 min</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="card btn draw-border">
-                        <div class="card-img card5"></div>
-                        <div class="card-body">
-                            <p class="card-title">Is Humanity About To Declare War On Alien Civilizations?</p>
-                            <p class= "card-read-time">60 min</p>
-                        </div>
+                        <a href="./article.html">
+                            <div class="card-img card5"></div>
+                            <div class="card-body">
+                                <p class="card-title">Is Humanity About To Declare War On Alien Civilizations?</p>
+                                <p class= "card-read-time">60 min</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card btn draw-border">
+                        <a href="./article.html">
+                            <div class="card-img card6"></div>
+                            <div class="card-body">
+                                <p class="card-title">Why Mars Matters</p>
+                                <p class= "card-read-time">35 min</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card btn draw-border">
+                        <a href="./article.html">
+                            <div class="card-img card1-img"></div>
+                            <!-- <img class="card-img" src="./images/article1.jpeg"> -->
+                            <div class="card-body">
+                                <p class="card-title">About that space illustration you keep seeing around</p>
+                                <p class= "card-read-time">10 min</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card btn draw-border">
+                        <a href="./article.html">
+                            <div class="card-img card2"></div>
+                            <div class="card-body">
+                                <p class="card-title">Why ‘Contact’ Is the Most Important Space Movie Ever Made</p>
+                                <p class= "card-read-time">6 min</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card btn draw-border">
+                        <a href="./article.html">
+                            <div class="card-img card3"></div>
+                            <div class="card-body">
+                                <p class="card-title">My Journey to the Edge of Space</p>
+                                <p class= "card-read-time">30 min</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card btn draw-border">
+                        <a href="./article.html">
+                            <div class="card-img card4"></div>
+                            <div class="card-body">
+                                <p class="card-title">Has NASA’s Kepler Mission Discovered an Alien Megastructure?</p>
+                                <p class= "card-read-time">20 min</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card btn draw-border">
+                        <a href="./article.html">
+                            <div class="card-img card5"></div>
+                            <div class="card-body">
+                                <p class="card-title">Is Humanity About To Declare War On Alien Civilizations?</p>
+                                <p class= "card-read-time">60 min</p>
+                            </div>
+                        </a>
                     </div>
 
                     <div class="card btn draw-border">
-                        <div class="card-img card6"></div>
-                        <div class="card-body">
-                            <p class="card-title">Why Mars Matters</p>
-                            <p class= "card-read-time">35 min</p>
-                        </div>
+                        <a href="./article.html">
+                            <div class="card-img card6"></div>
+                            <div class="card-body">
+                                <p class="card-title">Why Mars Matters</p>
+                                <p class= "card-read-time">35 min</p>
+                            </div>
+                        </a>
                     </div>
         </div>
     </main>
