@@ -108,13 +108,10 @@
     }
 
     .team-card {
-        width: 500px;
-        height: 400px;
         background-color: var(--card-background-color);
         text-align: center;
         margin: 20px;
         margin-top: 20px;
-        padding: 50px;
         margin-bottom: 50px;
         border-radius: 20px;
     }
