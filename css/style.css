@@ -426,13 +426,18 @@ h2 {
 .divForm{
     display: flex;
     flex-direction: column;
+    width: 70%;
 }
 
-.divImg {
+.contact {
     display: flex;
-    justify-content: center;
-    width: 60%;
-    align-items: center;
+    justify-content: center; 
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    -webkit-background-clip: text;
+    background-clip: "";
+    -webkit-text-fill-color: transparent;
+    transition: color 0.2s ease;
+    font-size: 2em;
 }
 
 .input-form{
@@ -443,7 +448,7 @@ h2 {
     background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
     transition: color 0.2s ease;
     border-radius: 20px;
-    font-size: 2em;
+    font-size: 1.3em;
 }
 
 .textareaForm{
@@ -455,28 +460,7 @@ h2 {
     background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
     transition: color 0.2s ease;
     border-radius: 20px;
-    font-size: 2em;
-}
-
-.astronautImg {
-    width: 95%;
-}
-
-.fellows{
-    text-align: center;
-}
-
-.contact {
-    display: flex;
-    justify-content: center; 
-    
-    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
-    -webkit-background-clip: text;
-    background-clip: "";
-    -webkit-text-fill-color: transparent;
-    transition: color 0.2s ease;
-    font-size: 3em;
-
+    font-size: 1.3em;
 }
 
 .boutonForm {
@@ -495,3 +479,16 @@ h2 {
     border-radius: 20px;
     font-size: 2em;
 }
+
+.divImg {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    align-items: center;
+}
+
+.astronautImg {
+    width: 95%;
+}
+
+
