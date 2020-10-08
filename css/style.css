@@ -408,8 +408,6 @@ a.link:hover {
     /*background-color: black;*/
     border-top: solid var(--primary-color-purple);
     border-width: 2px;
-    position: fixed;
-    bottom: 0;
     width: 100%;
     flex-wrap: wrap;
 }
@@ -537,7 +535,7 @@ h2{
     margin: 10px auto;
     width: 90%;
     border-color:var(--card-background-color);
-    font-size: 1.3em;
+    font-size: 1.7em;
 }
 
 .textareaForm{
@@ -545,7 +543,7 @@ h2{
     margin: 10px auto;
     height: 200px;
     width: 90%;
-    font-size: 1.3em;
+    font-size: 1.7em;
 }
 
 .boutonForm {
@@ -560,10 +558,11 @@ h2{
 }
 
 .divImg {
-    display: flex;
-    justify-content: center;
     width: 55%;
     align-items: center;
+    background-image: url("../images/astronaut-contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .astronautImg {
@@ -721,4 +720,9 @@ a.link:hover {
 .container-img-article{
     width: auto;
 
+}
+#contact footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
