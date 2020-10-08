@@ -141,7 +141,7 @@ li {
     transition: transform 0.3s, opacity 0.2s;
 }
 
-/* main Cards (Rooarii)*/
+/*main*/
 .wrap {
     display: flex;
     flex-direction: column;
@@ -377,41 +377,50 @@ a.link:hover {
     color: #E92297;
 }
 /*TEAM*/
-.team-title {
+
+.team-title{
     color: var(--primary-color-purple);
     text-align: center;
     font-size: 2em;
 }
 
-.team-card {
-    /*width: 500px;
-    height: 400px;*/
+.team-card{
+    width: auto;
+    height: auto;
     background-color: var(--card-background-color);
     margin: auto;
     text-align: center;
     margin-top: 20px;
-    padding: 50px;
+    /*padding: 50px;*/
     margin-bottom: 50px;
-    border-radius: 20px;
+    border-radius: 20px 20px 0px 0px;
 }
-.container-team-card {
-    display: flex;
-    flex-wrap: wrap;
-}
-/* can you use class instead of tags  (Samson)*/
-p {
-    color: var(--primary-color-pink);
-}
-/* can you use class instead of tags (Samson)*/
-h4 {
-    color: var(--primary-color-pink);
-}
-/* can you use class instead of tags  (Samson)*/
-h2 {
-    color: var(--primary-color-blue);
-    font-size: 30px;
+img.img-team{
+    border-radius: 20px 20px 0px 0px;
 }
 
+.container-team-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+h4{
+    color: var(--primary-color-pink);
+    margin: 0%;
+    font-size: 1em;
+}
+
+h2{
+    color: var(--primary-color-blue);
+    font-size: 2em;
+    margin: 0%;
+}
+
+.spacebetween{
+    margin: 5%;
+}
 /*contact*/
 
 .form {
