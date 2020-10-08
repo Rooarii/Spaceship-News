@@ -504,12 +504,14 @@ h2{
 .spacebetween{
     margin: 5%;
 }
+
 /*contact*/
 
 .mainContact {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 4%;
 }
 
 .divForm{
@@ -524,13 +526,10 @@ h2{
     border-radius: 20px;
 }
 
-.contact, .boutonForm {
+.contact {
     -webkit-background-clip: text;
     background-clip: "";
     -webkit-text-fill-color: transparent;
-}
-
-.contact {
     display: flex;
     justify-content: center; 
     font-size: 2em;
@@ -549,7 +548,6 @@ h2{
     margin: 10px auto;
     height: 200px;
     width: 90%;
-    border-color: var(--card-background-color);
     font-size: 1.3em;
 }
 
@@ -558,10 +556,10 @@ h2{
     margin: 10px auto;
     height: 40px;
     width: 40%;
-    border-color: var(--card-background-color);
     margin-top: 30px;
     margin-bottom: 30px;
     font-size: 1.5em;
+    border: none;
 }
 
 .divImg {
