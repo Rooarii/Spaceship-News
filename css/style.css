@@ -393,12 +393,9 @@ a.link:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap;
     align-items: center;
-    align-content: center;
-    /* position: fixed;
-    left: 0;
-    bottom: 0; */
+    align-content: center; */
 }
 
 .infoNav {
@@ -409,8 +406,8 @@ a.link:hover {
 .footWrap {
     line-height: 30px;
     /*background-color: black;*/
-    border-top: solid grey;
-    border-width: 1px;
+    border-top: solid var(--primary-color-purple);
+    border-width: 2px;
     position: fixed;
     bottom: 0;
     width: 100%;
