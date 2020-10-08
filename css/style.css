@@ -4,9 +4,6 @@
     --primary-color-pink: #E92297;
     --card-background-color: #333333;
 }
-html{
-    background: black;
-}
 body {
     font-family: 'Roboto Mono', monospace;
 }
