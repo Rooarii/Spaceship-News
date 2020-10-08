@@ -15,14 +15,19 @@ const navLightMode = document.querySelector('.navbar');
 const sideBarLightMode = document.querySelector('.nav-list');
 const titleNavLigthMode = document.getElementsByTagName('a');
 const videoView = document.getElementsByClassName('videoWrap')[0];
+const videoView2 = document.getElementsByClassName('videoWrap2')[0];
 console.log(videoView);
+console.log(videoView2);
 
 lightMode.addEventListener('click', ()=> {
-    footerLightMode.classList.toggle('light-mode');
-    mainlighModer.classList.toggle('light-mode');
-    navLightMode.classList.toggle('light-mode');
-    sideBarLightMode.classList.toggle('sideBarLightMode');
+    // footerLightMode.classList.toggle('light-mode');
+    // mainlighModer.classList.toggle('light-mode');
+    // navLightMode.classList.toggle('light-mode');
+    // sideBarLightMode.classList.toggle('sideBarLightMode');
     videoView.classList.toggle('video-hidden');
+    console.log(videoView2);
+    videoView2.classList.toggle('light-mode');
+    console.log(videoView2);
 })
 
  
