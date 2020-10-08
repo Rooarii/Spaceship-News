@@ -153,6 +153,14 @@
         width: 80%;
         padding-bottom: 30px;
     }
+    .footWrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .infoNav{
+        margin: 1%;
+    }
     .footer1 {
         display: flex;
         flex-direction: column;

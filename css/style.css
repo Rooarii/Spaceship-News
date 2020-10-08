@@ -404,7 +404,7 @@ a.link:hover {
 }
 
 .footWrap {
-    line-height: 30px;
+    /* line-height: 30px; */
     /*background-color: black;*/
     border-top: solid var(--primary-color-purple);
     border-width: 2px;
