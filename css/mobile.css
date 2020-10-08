@@ -187,11 +187,7 @@
         width: 80%;
         padding-bottom: 2%;
 
-    .article{
-        background-color: var(--card-background-color);
-        margin-left: 1%;
-        border-radius: 0px 0px 20px 20px;
-    }
+    
     .containerOfArticle{
         width: auto;
         background-color: black;
@@ -202,6 +198,9 @@
     }
     .article{
         width: auto;
+        background-color: var(--card-background-color);
+        margin-left: 1%;
+        border-radius: 0px 0px 20px 20px;
     }
     
     /*BOITE SUPERIEURE A DROITE DE L'ARTICLE*/
@@ -213,5 +212,8 @@
     }
     .container-img-article{
         margin-top: 100px;
+    }
+    .main-article{
+        padding-top: 10%;
     }
 }
