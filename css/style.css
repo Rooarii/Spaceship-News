@@ -146,7 +146,6 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
 }
 .search-form{
     display: flex;
@@ -339,6 +338,7 @@ a.link:hover {
     justify-content: flex-start;
     padding-left: 0px;
 }
+
 .footWrap {
     line-height: 30px;
     /*background-color: black;*/
@@ -359,6 +359,7 @@ a.link:hover {
 .socialMedia {
     padding-left: 40px;
 }
+
 .about {
     padding-left: 0px;
 }
@@ -376,6 +377,8 @@ a.link:hover {
     padding-right: 30px;
     color: #E92297;
 }
+/* end footer */
+
 /*TEAM*/
 
 .team-title{
@@ -423,16 +426,24 @@ h2{
 }
 /*contact*/
 
-.form {
+.mainContact {
     display: flex;
-    flex-direction: column;
-    padding-bottom: 100px;
-    width: 60%;
+    flex-direction: row;
+    align-items: center;
 }
 
-.divForm {
-    width: 60%;
+.divForm{
+    display: flex;
+    flex-direction: column;
 }
+
+.divImg {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    align-items: center;
+}
+
 .input-form{
     display: block;
     margin: 10px auto;
@@ -443,8 +454,8 @@ h2{
     border-radius: 20px;
     font-size: 2em;
 }
-/* can you use class instead of tags (Samson) */
-textarea {
+
+.textareaForm{
     display: block;
     margin: 10px auto;
     height: 200px;
@@ -456,7 +467,11 @@ textarea {
     font-size: 2em;
 }
 
-.fellows {
+.astronautImg {
+    width: 95%;
+}
+
+.fellows{
     text-align: center;
 }
 
@@ -473,7 +488,7 @@ textarea {
 
 }
 
-.bouton {
+.boutonForm {
     display: block;
     margin: 10px auto;
     height: 40px;
