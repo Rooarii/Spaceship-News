@@ -515,24 +515,33 @@ h2{
 .divForm{
     display: flex;
     flex-direction: column;
+    width: 45%;
 }
 
-.divImg {
+.contact, .input-form, .textareaForm, .boutonForm {
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    transition: color 0.2s ease;
+    border-radius: 20px;
+}
+
+.contact, .boutonForm {
+    -webkit-background-clip: text;
+    background-clip: "";
+    -webkit-text-fill-color: transparent;
+}
+
+.contact {
     display: flex;
-    justify-content: center;
-    width: 60%;
-    align-items: center;
+    justify-content: center; 
+    font-size: 2em;
 }
 
 .input-form{
     display: block;
     margin: 10px auto;
     width: 90%;
-    border-color: var(--card-background-color);
-    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
-    transition: color 0.2s ease;
-    border-radius: 20px;
-    font-size: 2em;
+    border-color:var(--card-background-color);
+    font-size: 1.3em;
 }
 
 .textareaForm{
@@ -541,31 +550,7 @@ h2{
     height: 200px;
     width: 90%;
     border-color: var(--card-background-color);
-    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
-    transition: color 0.2s ease;
-    border-radius: 20px;
-    font-size: 2em;
-}
-
-.astronautImg {
-    width: 95%;
-}
-
-.fellows{
-    text-align: center;
-}
-
-.contact {
-    display: flex;
-    justify-content: center;
-
-    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
-    -webkit-background-clip: text;
-    background-clip: "";
-    -webkit-text-fill-color: transparent;
-    transition: color 0.2s ease;
-    font-size: 3em;
-
+    font-size: 1.3em;
 }
 
 .boutonForm {
@@ -576,17 +561,19 @@ h2{
     border-color: var(--card-background-color);
     margin-top: 30px;
     margin-bottom: 30px;
-    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
-    -webkit-background-clip: text;
-    background-clip: "";
-    -webkit-text-fill-color: transparent;
-    transition: color 0.2s ease;
-    border-radius: 20px;
-    font-size: 2em;
-
+    font-size: 1.5em;
 }
 
+.divImg {
+    display: flex;
+    justify-content: center;
+    width: 55%;
+    align-items: center;
+}
 
+.astronautImg {
+    width: 95%;
+}
 
 /* PAGE ARTICLE*/
 .main-article{
