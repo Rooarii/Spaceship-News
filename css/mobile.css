@@ -9,6 +9,7 @@
 
     .navbar {
         position: fixed;
+        background: black;
     }
 
     .bigLogo {
@@ -188,5 +189,32 @@
     .divImg {
         width: 80%;
         padding-bottom: 2%;
+
+    .article{
+        background-color: var(--card-background-color);
+        margin-left: 1%;
+        border-radius: 0px 0px 20px 20px;
+    }
+    .containerOfArticle{
+        width: auto;
+        background-color: black;
+        margin: 0% 10% 10% 10%;
+        margin-bottom: 10%;
+        display: flex;
+        padding-top: 1%;
+    }
+    .article{
+        width: auto;
+    }
+    
+    /*BOITE SUPERIEURE A DROITE DE L'ARTICLE*/
+    .aside{
+        display: none;
+    }
+    .aside1{
+        display: none;
+    }
+    .container-img-article{
+        margin-top: 100px;
     }
 }
