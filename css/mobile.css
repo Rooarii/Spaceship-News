@@ -108,13 +108,10 @@
     }
 
     .team-card {
-        width: 500px;
-        height: 400px;
         background-color: var(--card-background-color);
         text-align: center;
         margin: 20px;
         margin-top: 20px;
-        padding: 50px;
         margin-bottom: 50px;
         border-radius: 20px;
     }
@@ -170,5 +167,53 @@
     .about {
         margin-top: 0px;
         margin-bottom: 0px;
+    }
+/* contact */
+    .mainContact {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 129px;
+    }
+    .divForm{
+        width: 100%;
+    }
+    .input-form{
+        width: 80%;
+    }
+    .textareaForm{
+        width: 80%;
+    }
+    .divImg {
+        width: 80%;
+        padding-bottom: 2%;
+    }
+    
+    .containerOfArticle{
+        width: auto;
+        background-color: black;
+        margin: 0% 10% 10% 10%;
+        margin-bottom: 10%;
+        display: flex;
+        padding-top: 1%;
+    }
+    .article{
+        width: auto;
+        background-color: var(--card-background-color);
+        margin-left: 1%;
+        border-radius: 0px 0px 20px 20px;
+    }
+    
+    /*BOITE SUPERIEURE A DROITE DE L'ARTICLE*/
+    .aside{
+        display: none;
+    }
+    .aside1{
+        display: none;
+    }
+    .container-img-article{
+        margin-top: 100px;
+    }
+    .main-article{
+        padding-top: 10%;
     }
 }

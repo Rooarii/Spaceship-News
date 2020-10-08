@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1</title>
+    <title>Spaceship</title>
     <meta name="description" content="">
     <meta name="contributors" content="Aurélien LAMARRE, Maxime LEBERRE, Rooarii MANUEL, Samson CORBIERE">
+    <link rel="shortcut icon" href="fa fa-space-shuttle">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./css/desktop.css">
@@ -15,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="body">
     <div class="videoWrap">
         <video autoplay muted loop id="theVideo">
             <source src="/images/skyVideo2.mov" type="video/mp4">
@@ -26,8 +27,8 @@
                 <source src="/images/skylapse1.mp4" type="video/mp4">
             </video>
     </div>
-    <header class="header-wrap">
-        <nav class="navbar">
+        <header class="header-wrap">
+            <nav class="navbar">
             <!--topbar-->
             <div class="nav-top-bar">
                 <div class="smallLogo" class="smallLogo-active"><img src="images/logo-mobile-sf2.png"></div>
@@ -40,9 +41,6 @@
             </div>
             <!--sidebar-->
             <ul class="nav-list">
-                <div class="topnav">
-                    <input class="input" type="text" placeholder="Search..">
-                  </div>
                 <li class="list-element" id="firstListElements">
                     <a href="./feed.html">Feed</a>
                 </li><!-- logo -->
@@ -78,317 +76,145 @@
         </nav>
     </header>
     <main class="wrap">
-        <!-- <form class>
+        <form class="search-form">
             <label for="search"></label>
-            <input type="text" id="search" name="search">
-        </form> -->
-        <a href="./article.html">
-            <article class="article">
-                <div class="card btn draw-border">
-                    <img class="card-img" src="./images/article1.jpeg">
-                    <div class="card-body">
-                        <h3 class="card-title">About that space illustration you keep seeing around</h3>
-                        <p class= "card-read-time">10 min</p>
+            <input class="searchbar" type="text" id="search" name="search" placeholder="Search">
+        </form>
+        <div class="cards">
+                    <div class="card btn draw-border">
+                        <a href="./article.html">
+                            <div class="card-img card1-img"></div>
+                            <!-- <img class="card-img" src="./images/article1.jpeg"> -->
+                            <div class="card-body">
+                                <p class="card-title">About that space illustration you keep seeing around</p>
+                                <p class= "card-read-time">10 min</p>
+                            </div>
+                        </a>
                     </div>
-                </div>
-            </article>
-        </a>    
-        <a href="./article.html">
-            <article class="article">
-                <div class="card btn draw-border">
-                    <img class="card-img" src="./images/article2.jpeg">
-                    <div class="card-body">
-                        <h3 class="card-title">Why ‘Contact’ Is the Most Important Space Movie Ever Made</h3>
-                        <p class= "card-read-time">6 min</p>
+                    <div class="card btn draw-border">
+                        <a href="./article.html">
+                            <div class="card-img card2"></div>
+                            <div class="card-body">
+                                <p class="card-title">Why ‘Contact’ Is the Most Important Space Movie Ever Made</p>
+                                <p class= "card-read-time">6 min</p>
+                            </div>
+                        </a>
                     </div>
-                </div>
-            </article>
-        </a>
-        <a href="./article.html">
-            <article class="article">
-                <div class="card btn draw-border">
-                    <img class="card-img" src="./images/article3.jpeg">
-                    <div class="card-body">
-                        <h3 class="card-title">My Journey to the Edge of Space</h3>
-                        <p class= "card-read-time">30 min</p>
+                    <div class="card btn draw-border">
+                        <a href="./article.html">
+                            <div class="card-img card3"></div>
+                            <div class="card-body">
+                                <p class="card-title">My Journey to the Edge of Space</p>
+                                <p class= "card-read-time">30 min</p>
+                            </div>
+                        </a>
                     </div>
-                </div>
-            </article>
-        </a>
-        <a href="./article.html">
-            <article class="article">
-                <div class="card btn draw-border">
-                    <img class="card-img" src="./images/article4.jpeg">
-                    <div class="card-body">
-                        <h3 class="card-title">Has NASA’s Kepler Mission Discovered an Alien Megastructure?</h3>
-                        <p class= "card-read-time">20 min</p>
+                    <div class="card btn draw-border">
+                        <a href="./article.html">
+                            <div class="card-img card4"></div>
+                            <div class="card-body">
+                                <p class="card-title">Has NASA’s Kepler Mission Discovered an Alien Megastructure?</p>
+                                <p class= "card-read-time">20 min</p>
+                            </div>
+                        </a>
                     </div>
-                </div>
-            </article>
-        </a>
-        <a href="./article.html">
-            <article class="article">
-                <div class="card btn draw-border">
-                    <img class="card-img" src="./images/article5.jpeg">
-                    <div class="card-body">
-                        <h3 class="card-title">Is Humanity About To Accidentally Declare Interstellar War On Alien Civilizations?</h3>
-                        <p class= "card-read-time">60 min</p>
+                    <div class="card btn draw-border">
+                        <a href="./article.html">
+                            <div class="card-img card5"></div>
+                            <div class="card-body">
+                                <p class="card-title">Is Humanity About To Declare War On Alien Civilizations?</p>
+                                <p class= "card-read-time">60 min</p>
+                            </div>
+                        </a>
                     </div>
-                </div>
-            </article>
-        </a>
-        <a href="./article.html">
-            <article class="article">
-                <div class="card btn draw-border">
-                    <img class="card-img" src="./images/article6.jpeg">
-                    <div class="card-body">
-                        <h3 class="card-title">Why Mars Matters</h3>
-                        <p class= "card-read-time">35 min</p>
+                    <div class="card btn draw-border">
+                        <a href="./article.html">
+                            <div class="card-img card6"></div>
+                            <div class="card-body">
+                                <p class="card-title">Why Mars Matters</p>
+                                <p class= "card-read-time">35 min</p>
+                            </div>
+                        </a>
                     </div>
-                </div>
-            </article>
-        </a>
-        <a href="./article.html">
-            <article class="article">
-                <div class="card btn draw-border">
-                    <img class="card-img" src="./images/article7.jpeg">
-                    <div class="card-body">
-                        <h3 class="card-title">Elon Musk isn’t an alien. He’s becoming a robot instead.</h3>
-                        <p class= "card-read-time">10 min</p>
+                    <div class="card btn draw-border">
+                        <a href="./article.html">
+                            <div class="card-img card1-img"></div>
+                            <!-- <img class="card-img" src="./images/article1.jpeg"> -->
+                            <div class="card-body">
+                                <p class="card-title">About that space illustration you keep seeing around</p>
+                                <p class= "card-read-time">10 min</p>
+                            </div>
+                        </a>
                     </div>
-                </div>
-            </article>
-        </a>
-        <a href="./article.html">
-            <article class="article">
-                <div class="card btn draw-border">
-                    <img class="card-img" src="./images/article8.jpeg">
-                    <div class="card-body">
-                        <h3 class="card-title">Jabba the Trump: A comic and coloring page!</h3>
-                        <p class= "card-read-time">0.5 min</p>
+                    <div class="card btn draw-border">
+                        <a href="./article.html">
+                            <div class="card-img card2"></div>
+                            <div class="card-body">
+                                <p class="card-title">Why ‘Contact’ Is the Most Important Space Movie Ever Made</p>
+                                <p class= "card-read-time">6 min</p>
+                            </div>
+                        </a>
                     </div>
-                </div>
-            </article>
-        </a>
-        <a href="./article.html">
-            <article class="article">
-                <div class="card btn draw-border">
-                    <img class="card-img" src="./images/article9.jpeg">
-                    <div class="card-body">
-                        <h3 class="card-title">Movie Review: Ridley Scott returns to the franchise he helped to spawn in “Alien: Covenant”.</h3>
-                        <p class= "card-read-time"> 30 min</p>
+                    <div class="card btn draw-border">
+                        <a href="./article.html">
+                            <div class="card-img card3"></div>
+                            <div class="card-body">
+                                <p class="card-title">My Journey to the Edge of Space</p>
+                                <p class= "card-read-time">30 min</p>
+                            </div>
+                        </a>
                     </div>
-                </div>
-            </article>
-        </a>
-        <a href="./article.html">
-            <article class="article">
-                <div class="card btn draw-border">
-                    <img class="card-img" src="">
-                    <div class="card-body">
-                        <h3 class="card-title">Airbus is building 900 satellites to beam internet from space</h3>
-                        <p class= "card-read-time">0.5 min</p>
+                    <div class="card btn draw-border">
+                        <a href="./article.html">
+                            <div class="card-img card4"></div>
+                            <div class="card-body">
+                                <p class="card-title">Has NASA’s Kepler Mission Discovered an Alien Megastructure?</p>
+                                <p class= "card-read-time">20 min</p>
+                            </div>
+                        </a>
                     </div>
-                </div>
-            </article>
-        </a>
-        <a href="./article.html">
-            <article class="article">
-                <div class="card btn draw-border">
-                    <img class="card-img" src="./images/article10.jpeg">
-                    <div class="card-body">
-                        <h3 class="card-title">Why NASA’s EmDrive Might Be the Most Exciting Breakthrough in Tech Right Now</h3>
-                        <p class= "card-read-time">40 min</p>
+                    <div class="card btn draw-border">
+                        <a href="./article.html">
+                            <div class="card-img card5"></div>
+                            <div class="card-body">
+                                <p class="card-title">Is Humanity About To Declare War On Alien Civilizations?</p>
+                                <p class= "card-read-time">60 min</p>
+                            </div>
+                        </a>
                     </div>
-                </div>
-            </article>
-        </a>
-        <a href="./article.html">
-            <article class="article">
-                <div class="card btn draw-border">
-                    <img class="card-img" src="./images/article11.jpeg">
-                    <div class="card-body">
-                        <h3 class="card-title">Black Holes Must Have Singularities, Says Einstein’s Relativity</h3>
-                        <p class= "card-read-time">30 min</p>
+
+                    <div class="card btn draw-border">
+                        <a href="./article.html">
+                            <div class="card-img card6"></div>
+                            <div class="card-body">
+                                <p class="card-title">Why Mars Matters</p>
+                                <p class= "card-read-time">35 min</p>
+                            </div>
+                        </a>
                     </div>
-                </div>
-            </article>
-        </a>
-        <a href="./article.html">
-            <article class="article">
-                <div class="card btn draw-border">
-                    <img class="card-img" src="./images/article12.png">
-                    <div class="card-body">
-                        <h3 class="card-title">Spock and The Collective Consciousness</h3>
-                        <p class= "card-read-time">180 min</p>
-                    </div>
-                </div>
-            </article>
-        </a>
-        <a href="./article.html">
-            <article class="article">
-                <div class="card btn draw-border">
-                    <img class="card-img" src="./images/article1.jpeg">
-                    <div class="card-body">
-                        <h3 class="card-title">About that space illustration you keep seeing around</h3>
-                        <p class= "card-read-time">10 min</p>
-                    </div>
-                </div>
-            </article>
-        </a>    
-        <a href="./article.html">
-            <article class="article">
-                <div class="card btn draw-border">
-                    <img class="card-img" src="./images/article2.jpeg">
-                    <div class="card-body">
-                        <h3 class="card-title">Why ‘Contact’ Is the Most Important Space Movie Ever Made</h3>
-                        <p class= "card-read-time">6 min</p>
-                    </div>
-                </div>
-            </article>
-        </a>
-        <a href="./article.html">
-            <article class="article">
-                <div class="card btn draw-border">
-                    <img class="card-img" src="./images/article3.jpeg">
-                    <div class="card-body">
-                        <h3 class="card-title">My Journey to the Edge of Space</h3>
-                        <p class= "card-read-time">30 min</p>
-                    </div>
-                </div>
-            </article>
-        </a>
-        <a href="./article.html">
-            <article class="article">
-                <div class="card btn draw-border">
-                    <img class="card-img" src="./images/article4.jpeg">
-                    <div class="card-body">
-                        <h3 class="card-title">Has NASA’s Kepler Mission Discovered an Alien Megastructure?</h3>
-                        <p class= "card-read-time">20 min</p>
-                    </div>
-                </div>
-            </article>
-        </a>
-        <a href="./article.html">
-            <article class="article">
-                <div class="card btn draw-border">
-                    <img class="card-img" src="./images/article5.jpeg">
-                    <div class="card-body">
-                        <h3 class="card-title">Is Humanity About To Accidentally Declare Interstellar War On Alien Civilizations?</h3>
-                        <p class= "card-read-time">60 min</p>
-                    </div>
-                </div>
-            </article>
-        </a>
-        <a href="./article.html">
-            <article class="article">
-                <div class="card btn draw-border">
-                    <img class="card-img" src="./images/article6.jpeg">
-                    <div class="card-body">
-                        <h3 class="card-title">Why Mars Matters</h3>
-                        <p class= "card-read-time">35 min</p>
-                    </div>
-                </div>
-            </article>
-        </a>
-        <a href="./article.html">
-            <article class="article">
-                <div class="card btn draw-border">
-                    <img class="card-img" src="./images/article7.jpeg">
-                    <div class="card-body">
-                        <h3 class="card-title">Elon Musk isn’t an alien. He’s becoming a robot instead.</h3>
-                        <p class= "card-read-time">10 min</p>
-                    </div>
-                </div>
-            </article>
-        </a>
-        <a href="./article.html">
-            <article class="article">
-                <div class="card btn draw-border">
-                    <img class="card-img" src="./images/article8.jpeg">
-                    <div class="card-body">
-                        <h3 class="card-title">Jabba the Trump: A comic and coloring page!</h3>
-                        <p class= "card-read-time">0.5 min</p>
-                    </div>
-                </div>
-            </article>
-        </a>
-        <a href="./article.html">
-            <article class="article">
-                <div class="card btn draw-border">
-                    <img class="card-img" src="./images/article9.jpeg">
-                    <div class="card-body">
-                        <h3 class="card-title">Movie Review: Ridley Scott returns to the franchise he helped to spawn in “Alien: Covenant”.</h3>
-                        <p class= "card-read-time"> 30 min</p>
-                    </div>
-                </div>
-            </article>
-        </a>
-        <a href="./article.html">
-            <article class="article">
-                <div class="card btn draw-border">
-                    <img class="card-img" src="">
-                    <div class="card-body">
-                        <h3 class="card-title">Airbus is building 900 satellites to beam internet from space</h3>
-                        <p class= "card-read-time">0.5 min</p>
-                    </div>
-                </div>
-            </article>
-        </a>
-        <a href="./article.html">
-            <article class="article">
-                <div class="card btn draw-border">
-                    <img class="card-img" src="./images/article10.jpeg">
-                    <div class="card-body">
-                        <h3 class="card-title">Why NASA’s EmDrive Might Be the Most Exciting Breakthrough in Tech Right Now</h3>
-                        <p class= "card-read-time">40 min</p>
-                    </div>
-                </div>
-            </article>
-        </a>
-        <a href="./article.html">
-            <article class="article">
-                <div class="card btn draw-border">
-                    <img class="card-img" src="./images/article11.jpeg">
-                    <div class="card-body">
-                        <h3 class="card-title">Black Holes Must Have Singularities, Says Einstein’s Relativity</h3>
-                        <p class= "card-read-time">30 min</p>
-                    </div>
-                </div>
-            </article>
-        </a>
-        <a href="./article.html">
-            <article class="article">
-                <div class="card btn draw-border">
-                    <img class="card-img" src="./images/article12.png">
-                    <div class="card-body">
-                        <h3 class="card-title">Spock and The Collective Consciousness</h3>
-                        <p class= "card-read-time">180 min</p>
-                    </div>
-                </div>
-            </article>
-        </a>
+        </div>
     </main>
     <footer>
         <div class="footWrap">
             <div class="footer1">
                 <ul class="infoNav">
-                    <li><a href="./feed.html">Feed</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="./team.html">Team</a></li>
+                    <li class="textFooter"><a href="./feed.html">Feed</a></li>
+                    <li class="textFooter"><a href="./contact.html">Contact</a></li>
+                    <li class="textFooter"><a href="./team.html">Team</a></li>
+                </ul>
+                <ul class="infoNav">
+                    <li class="tiret">|</li>
+                </ul>
+                <ul class="about">
+                    <li class="textFooter"><a href="#">Policy</a></li>
+                    <li class="textFooter"><a href="#">Terms & conditions</a></li>
                 </ul>
             </div>
             <div class="footer2">
-                <ul class="about">
-                    <li><a href="#">Policy</a></li>
-                    <li><a href="#">Terms & conditions</a></li>
-                </ul>
-            </div>
-            <div class="footer3">
                 <ul class="socialMedia">
-                    <li><a href="https://www.instagram.com/spaceshipnews/?hl=fr"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    <li> <a href="https://twitter.com/spacesh25003953"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.twitch.tv/spaceshipnews"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>
+                    <li class="textFooter"><a href="https://www.instagram.com/spaceshipnews/?hl=fr"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li class="textFooter"> <a href="https://twitter.com/spacesh25003953"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li class="textFooter"><a href="https://www.twitch.tv/spaceshipnews"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -396,5 +222,4 @@
     </footer>
     <script src="script.js"></script>
 </body>
-
 </html>
