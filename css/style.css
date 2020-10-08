@@ -411,8 +411,8 @@ a.link:hover {
     /*background-color: black;*/
     border-top: solid grey;
     border-width: 1px;
-    /* position: fixed;
-    bottom: 0; */
+    position: fixed;
+    bottom: 0;
     width: 100%;
     flex-wrap: wrap;
 }
