@@ -61,6 +61,7 @@
         left: 0;
         height: 100vh;
         position: fixed;
+        align-items: normal;
     }
 
     .nav-list li {
@@ -216,4 +217,10 @@
     .main-article{
         padding-top: 10%;
     }
+}
+
+/* Media query for small mobile like iphone 5 and smaller */
+@media only screen and (max-width: 350px){
+    .nav-list li {
+        line-height: 40px;
 }

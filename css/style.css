@@ -11,7 +11,7 @@ body {
     cursor: url('data:image/x-icon;base64,AAACAAEAICACAAAAAAAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAP8IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADzwAAA88AAMwAzADMAMwAz//MAM//zAD///wA///8ADz88AA8/PAAD//AAA//wAADAwAAAwMAAAwAwAAMAMABAAAAAYAAAAHAAAAAAAAAA///////////////////////////////////////////////////////////+AB///gAf/4AAAH+AAAB/gAAAf4AAAH+AAAB/gAAAf4AAAH+AAAB/4AAB/+AAAf/4AAf/+AAH//geB/94Hgf/OH+H/xh/h/8P////B////wP///8='), auto;
 }
 
-video{
+video {
     display: block;
     position: absolute;
     width: 100%;
@@ -28,6 +28,7 @@ video{
 .video-hidden {
     display: none;
 }
+
 /* cursor change on hover */
 a {
     cursor: url(https://cur.cursors-4u.net/mechanics/mec-1/mec8.cur), auto;
@@ -61,11 +62,11 @@ a {
 }
 
 input[type='checkbox'] {
-    margin-right: .5em;
+    margin-right: 1em;
     outline: none;
     position: relative;
     width: 80px;
-    height: 40px;
+    height: 30px;
     -webkit-appearance: none;
     background: #c6c6c6;
     border-radius: 20px;
@@ -80,7 +81,7 @@ input[type='checkbox']:before {
     content: '';
     position: absolute;
     width: 40px;
-    height: 40px;
+    height: 30px;
     border-radius: 20px;
     top: 0;
     left: 0;
@@ -115,6 +116,12 @@ input:checked[type='checkbox']:before {
 
 .bigLogo {
     padding-left: 2em;
+    height: 6em;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    border-radius: 20px;
+    width: 100%;
 }
 
 .fa-instagram:before {
@@ -136,6 +143,7 @@ input:checked[type='checkbox']:before {
 .nav-list {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .nav-list li {
@@ -146,7 +154,7 @@ input:checked[type='checkbox']:before {
 .nav-list li a {
     -webkit-text-fill-color: transparent;
     transition: color 0.2s ease;
-    font-size: 40px;
+    font-size: 1.5em;
 }
 
 .nav-list2 {
