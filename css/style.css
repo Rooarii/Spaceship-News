@@ -79,7 +79,6 @@ input:checked[type='checkbox']:before{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color: black;
 }
 
 .smallLogo {
@@ -265,6 +264,7 @@ main {
 
     .navbar {
         position: fixed;
+        background: black;
     }
 
     .bigLogo {
