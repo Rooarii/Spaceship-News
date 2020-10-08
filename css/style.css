@@ -179,12 +179,11 @@ input:checked[type='checkbox']:before {
     transition: transform 0.3s, opacity 0.2s;
 }
 
-/* main Cards (Rooarii)*/
+/*main*/
 .wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
 }
 
 .search-form {
@@ -447,29 +446,40 @@ a.link:hover {
     color: #E92297;
 }
 
+/* end footer */
+
+
 /*TEAM*/
-.team-title {
+
+.team-title{
     color: var(--primary-color-purple);
     text-align: center;
     font-size: 2em;
 }
 
-.team-card {
-    /*width: 500px;
-    height: 400px;*/
+.team-card{
+    width: auto;
+    height: auto;
     background-color: var(--card-background-color);
     margin: auto;
     text-align: center;
     margin-top: 20px;
-    padding: 50px;
+    /*padding: 50px;*/
     margin-bottom: 50px;
-    border-radius: 20px;
+    border-radius: 20px 20px 0px 0px;
 }
 
-.container-team-card {
+img.img-team{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.container-team-card{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+
 }
+
 
 /* can you use class instead of tags  (Samson)*/
 p {
@@ -477,30 +487,44 @@ p {
 }
 
 /* can you use class instead of tags (Samson)*/
-h4 {
+h4{
+
     color: var(--primary-color-pink);
+    margin: 0%;
+    font-size: 1em;
 }
 
-/* can you use class instead of tags  (Samson)*/
-h2 {
+
+h2{
     color: var(--primary-color-blue);
-    font-size: 30px;
+    font-size: 2em;
+    margin: 0%;
 }
 
+.spacebetween{
+    margin: 5%;
+}
 /*contact*/
 
-.form {
+.mainContact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.divForm{
     display: flex;
     flex-direction: column;
-    padding-bottom: 100px;
-    width: 60%;
 }
 
-.divForm {
+.divImg {
+    display: flex;
+    justify-content: center;
     width: 60%;
+    align-items: center;
 }
 
-.input-form {
+.input-form{
     display: block;
     margin: 10px auto;
     width: 90%;
@@ -511,8 +535,7 @@ h2 {
     font-size: 2em;
 }
 
-/* can you use class instead of tags (Samson) */
-textarea {
+.textareaForm{
     display: block;
     margin: 10px auto;
     height: 200px;
@@ -524,7 +547,11 @@ textarea {
     font-size: 2em;
 }
 
-.fellows {
+.astronautImg {
+    width: 95%;
+}
+
+.fellows{
     text-align: center;
 }
 
@@ -541,7 +568,7 @@ textarea {
 
 }
 
-.bouton {
+.boutonForm {
     display: block;
     margin: 10px auto;
     height: 40px;
@@ -556,4 +583,160 @@ textarea {
     transition: color 0.2s ease;
     border-radius: 20px;
     font-size: 2em;
+
+}
+
+
+
+/* PAGE ARTICLE*/
+.main-article{
+    height: 100%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+
+/*BANNIERE IMAGE*/
+.container-img-ban{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 0%;
+}
+.imgOfBan{
+    display: flex;
+    margin: auto;
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+}
+
+/*CONTAINER OF ARTICLE*/
+
+.containerOfArticle{
+    width: 80%;
+    background-color: black;
+    margin: auto;
+    margin-bottom: 10%;
+    display: flex;
+    padding-top: 1%;
+}
+
+/*L'ARTICLE EN LUI MEME*/
+.article{
+    width: 70%; 
+    background-color: var(--card-background-color);
+    margin-left: 1%;
+    /* border-radius: 0px 0px 0px 20px; */
+}
+.article-title{
+    color:var(--primary-color-purple);
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.5em;
+
+}
+.text-container{
+    width: 80%;
+    margin: auto;
+    color: var(--primary-color-blue);    
+}  
+.article-title-h2{
+    color: var(--primary-color-purple);
+    text-decoration: underline;
+    font-size: 1.5em;
+    text-align: center;
+}
+/*CROIX */
+.close-btn {
+    background: black;
+    color: var(--primary-color-purple);
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    padding-top:10px;
+    margin: auto;
+    margin-top: 1.5em;
+  }
+  .close-btn:hover {
+    background-color: var(--primary-color-pink);
+  }
+
+
+/* ELEMENT A COTE DE L'ARTICLE*/
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    width: 30%; 
+    height: 100%;
+}
+.title-h1-aside{
+    max-width: 100%;
+}
+.title-h2-in-aside{
+    margin: 0%;
+}
+.subtitle-aside{
+    color: var(--primary-color-pink);
+}
+
+.additional-text{
+    color: var(--primary-color-purple);
+    font-style: italic;
+    margin: 0%;
+}
+
+.separator-in-box{
+    width: 80%;
+    text-align: center;
+}
+/*BOITE SUPERIEURE A DROITE DE L'ARTICLE*/
+.aside{
+    width: 100%;
+    height: 50%;
+    margin-left: 1%;
+    margin-right: 1%;
+    background-color: var(--card-background-color);
+    text-align: center;
+}
+.profile-pic-article{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+}
+/*BOITE INFERIEURE A DROITE DE L'ARTICLE*/
+.aside1{
+    width: 100%;
+    height: 50%;
+    margin-left: 1%;
+    margin-right: 1%;
+    background-color: var(--card-background-color);
+    text-align: center;
+    margin-top: 1%;
+}
+.recommandation-pic-article{
+    margin: auto;
+    width: 200px;
+    height: 180px;
+    border-radius: 20px;
+    max-width: 100%;
+}
+/*TOUS LES LIENS DE LA PAGE ARTICLE*/
+a.link:link{
+    color: var(--primary-color-purple);
+}
+a.link:visited{
+    color: var(--primary-color-purple);
+}
+a.link:hover {
+    color: var(--primary-color-blue);
+}
+
+.container-img-article{
+    width: auto;
+
 }
