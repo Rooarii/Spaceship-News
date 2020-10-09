@@ -423,7 +423,7 @@ a.link:hover {
 .footer1 {
     display: flex;
     flex-direction: row;
-    padding-left: 30px;
+    /* padding-left: 30px; */
 }
 
 .socialMedia {
@@ -520,8 +520,9 @@ h2{
 .divForm{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 45%;
-    margin-left: 5%;
+    /* margin-left: 5%; */
     margin-top: 5%;
 }
 
@@ -531,6 +532,7 @@ h2{
     transition: color 0.2s ease;
     border-radius: 20px;
     padding-left: 5%;
+    margin-top: 1.5%;
 }
 
 .contact {
@@ -539,7 +541,7 @@ h2{
     /* -webkit-text-fill-color: transparent; */
     display: flex;
     justify-content: center; 
-    font-size: 3em;
+    font-size: 2em;
     /* color: var(--primary-color-pink); */
     background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
     transition: color 0.2s ease;
@@ -550,10 +552,10 @@ h2{
 
 .input-form{
     display: block;
-    margin: 10px auto;
-    width: 90%;
+    /* margin: 10px auto; */
+    width: 80%;
     border-color:var(--card-background-color);
-    font-size: 1.7em;
+    font-size: 1.3em;
     height: 44px;
 }
 .text-contact{
@@ -564,25 +566,25 @@ h2{
 }
 .textareaForm{
     display: block;
-    margin: 10px auto;
-    height: 200px;
-    width: 90%;
-    font-size: 1.7em;
+    /* margin: 10px auto; */
+    height: 100px;
+    width: 80%;
+    font-size: 1.3em;
     padding-top: 2%;
 }
 
 .boutonForm {
     display: block;
-    margin: 10px auto;
+    /* margin: 10px auto; */
     height: 40px;
     width: 40%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 1.5em;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 1.3em;
     border: none;
 }
 
-.boutonForm {
+/* .boutonForm {
     display: block;
     margin: 10px auto;
     height: 40px;
@@ -591,7 +593,7 @@ h2{
     margin-bottom: 30px;
     font-size: 1.5em;
     border: none;
-}
+} */
 
 /* .divImg {
     height: 400px;
