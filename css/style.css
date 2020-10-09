@@ -757,8 +757,22 @@ a.link:hover {
     width: auto;
 
 }
+
+.job-name{
+    color: var(--primary-color-pink);
+    margin: 0%;
+    font-size: 1em;
+    padding: 5% 0% 5% 0%;
+}
+
+.team-name{
+    color: var(--primary-color-blue);
+    font-size: 2em;
+    padding-top: 5%;
+}
 #contact footer{
     position: fixed;
     bottom: 0;
     width: 100%;
+}
 }
