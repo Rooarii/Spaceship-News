@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 
-<body class="bodyContact">
+<body id="contact"class="bodyContact">
     <div class="videoWrap">
         <video autoplay muted loop id="theVideo">
             <source src="/images/skyVideo2.mov" type="video/mp4">
@@ -26,12 +26,12 @@
                 <source src="/images/skylapse1.mp4" type="video/mp4">
             </video>
     </div>
-    <header class="header-wrap">
-        <nav class="navbar">
+        <header class="header-wrap">
+            <nav class="navbar">
             <!--topbar-->
             <div class="nav-top-bar">
-                <div class="smallLogo" class="smallLogo-active"><img src="images/logo-mobile-sf2.png"></div>
-                <div class="bigLogo"><a href="./index.html"><img src="images/logo-desktop-sf2.png" style="height: 10em;"></a></div> 
+                <div class="smallLogo" class="smallLogo-active"><a href="./index.html"><img src="images/logo-mobile-sf2.png"></a></div>
+                <div class="bigLogo"><a href="./index.html"><img src="images/logofinal.png" style="height: 6em;"></a></div> 
                 <div class="menu-burger">
                     <div class="line-top"></div>
                     <div class="line-middle"></div>
@@ -40,9 +40,6 @@
             </div>
             <!--sidebar-->
             <ul class="nav-list">
-                <div class="topnav">
-                    <input class="input" type="text" placeholder="Search..">
-                  </div>
                 <li class="list-element" id="firstListElements">
                     <a href="./feed.html">Feed</a>
                 </li><!-- logo -->
@@ -81,15 +78,22 @@
     <main class="mainContact">
             <form class="divForm">
                 <h2 class="contact">Contact us</h2>
-                <input class="input-form" type="text" placeholder="    First name">
-                <input class="input-form" type="text" placeholder="    Last name">
-                <input class="input-form" type="email" placeholder="    @">
-                <textarea class="textareaForm" placeholder="  Enter your message"></textarea>
-                <button class="boutonForm">Submit</button>
-            </form> 
-            <div class="divImg">
-                <img src="images/astronaut-contact.jpg" alt="astronaut" class="astronautImg"/>
+                <input class="input-form" type="text" placeholder="First name">
+                <input class="input-form" type="text" placeholder="Last name">
+                <input class="input-form" type="email" placeholder="@">
+                <textarea class="textareaForm" placeholder="Enter your message"></textarea>
+                <button class="boutonForm">Send</button>
+            </form>
+            <div class="text-contact">
+                <b>
+                    <p>We are here to guide you in the space discovery and lead you toward infinity and beyond!</p>
+                    <p>Houston, we have a problem ...? Don't hesitate to contact Spaceship News</p>
+                    <p>Long life and prosperity to Spaceship News 🖖</p>
+                </b>
             </div>
+            <!-- <div class="divImg">
+                <!-- <img src="images/astronaut-contact.jpg" alt="astronaut" class="astronautImg"/> -->
+            <!-- </div> --> 
     </main>
     <!-- footer-->
     <footer>

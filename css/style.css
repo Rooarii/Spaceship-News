@@ -11,7 +11,7 @@ body {
     cursor: url('data:image/x-icon;base64,AAACAAEAICACAAAAAAAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAP8IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADzwAAA88AAMwAzADMAMwAz//MAM//zAD///wA///8ADz88AA8/PAAD//AAA//wAADAwAAAwMAAAwAwAAMAMABAAAAAYAAAAHAAAAAAAAAA///////////////////////////////////////////////////////////+AB///gAf/4AAAH+AAAB/gAAAf4AAAH+AAAB/gAAAf4AAAH+AAAB/4AAB/+AAAf/4AAf/+AAH//geB/94Hgf/OH+H/xh/h/8P////B////wP///8='), auto;
 }
 
-video{
+video {
     display: block;
     position: absolute;
     width: 100%;
@@ -28,8 +28,9 @@ video{
 .video-hidden {
     display: none;
 }
+
 /* cursor change on hover */
-a {
+a, button{
     cursor: url(https://cur.cursors-4u.net/mechanics/mec-1/mec8.cur), auto;
 }
 
@@ -61,11 +62,11 @@ a {
 }
 
 input[type='checkbox'] {
-    margin-right: .5em;
+    margin-right: 1em;
     outline: none;
     position: relative;
     width: 80px;
-    height: 40px;
+    height: 30px;
     -webkit-appearance: none;
     background: #c6c6c6;
     border-radius: 20px;
@@ -80,7 +81,7 @@ input[type='checkbox']:before {
     content: '';
     position: absolute;
     width: 40px;
-    height: 40px;
+    height: 30px;
     border-radius: 20px;
     top: 0;
     left: 0;
@@ -115,6 +116,12 @@ input:checked[type='checkbox']:before {
 
 .bigLogo {
     padding-left: 2em;
+    height: 6em;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    border-radius: 20px;
+    width: 100%;
 }
 
 .fa-instagram:before {
@@ -136,6 +143,7 @@ input:checked[type='checkbox']:before {
 .nav-list {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .nav-list li {
@@ -146,7 +154,7 @@ input:checked[type='checkbox']:before {
 .nav-list li a {
     -webkit-text-fill-color: transparent;
     transition: color 0.2s ease;
-    font-size: 40px;
+    font-size: 1.5em;
 }
 
 .nav-list2 {
@@ -393,12 +401,9 @@ a.link:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap;
     align-items: center;
-    align-content: center;
-    /* position: fixed;
-    left: 0;
-    bottom: 0; */
+    align-content: center; */
 }
 
 .infoNav {
@@ -407,12 +412,10 @@ a.link:hover {
 }
 
 .footWrap {
-    line-height: 30px;
+    /* line-height: 30px; */
     /*background-color: black;*/
-    border-top: solid grey;
-    border-width: 1px;
-    /* position: fixed;
-    bottom: 0; */
+    border-top: solid var(--primary-color-purple);
+    border-width: 2px;
     width: 100%;
     flex-wrap: wrap;
 }
@@ -483,7 +486,7 @@ img.img-team{
 
 /* can you use class instead of tags  (Samson)*/
 p {
-    color: var(--primary-color-pink);
+    color: var(--primary-color-blue);
 }
 
 /* can you use class instead of tags (Samson)*/
@@ -518,37 +521,54 @@ h2{
     display: flex;
     flex-direction: column;
     width: 45%;
+    margin-left: 5%;
+    margin-top: 5%;
 }
 
-.contact, .input-form, .textareaForm, .boutonForm {
+
+.input-form, .textareaForm, .boutonForm {
     background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
     transition: color 0.2s ease;
     border-radius: 20px;
+    padding-left: 5%;
 }
 
 .contact {
     -webkit-background-clip: text;
     background-clip: "";
-    -webkit-text-fill-color: transparent;
+    /* -webkit-text-fill-color: transparent; */
     display: flex;
     justify-content: center; 
-    font-size: 2em;
+    font-size: 3em;
+    /* color: var(--primary-color-pink); */
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    transition: color 0.2s ease;
+    border-radius: 20px;
+    text-shadow: 2px 2px var(--primary-color-pink);
 }
+
 
 .input-form{
     display: block;
     margin: 10px auto;
     width: 90%;
     border-color:var(--card-background-color);
-    font-size: 1.3em;
+    font-size: 1.7em;
+    height: 44px;
 }
-
+.text-contact{
+    font-size: 1.5em ;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-shadow: 2px 2px var(--primary-color-pink);
+}
 .textareaForm{
     display: block;
     margin: 10px auto;
     height: 200px;
     width: 90%;
-    font-size: 1.3em;
+    font-size: 1.7em;
+    padding-top: 2%;
 }
 
 .boutonForm {
@@ -562,12 +582,24 @@ h2{
     border: none;
 }
 
-.divImg {
-    display: flex;
-    justify-content: center;
-    width: 55%;
-    align-items: center;
+.boutonForm {
+    display: block;
+    margin: 10px auto;
+    height: 40px;
+    width: 40%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    border: none;
 }
+
+/* .divImg {
+    height: 400px;
+    width: 40%;
+    background-image: url("../images/astronaut-contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
 
 .astronautImg {
     width: 95%;
@@ -725,6 +757,7 @@ a.link:hover {
     width: auto;
 
 }
+
 .job-name{
     color: var(--primary-color-pink);
     margin: 0%;
@@ -736,4 +769,10 @@ a.link:hover {
     color: var(--primary-color-blue);
     font-size: 2em;
     padding-top: 5%;
+}
+#contact footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 }

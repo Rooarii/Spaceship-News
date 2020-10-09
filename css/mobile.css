@@ -61,6 +61,7 @@
         left: 0;
         height: 100vh;
         position: fixed;
+        align-items: normal;
     }
 
     .nav-list li {
@@ -153,6 +154,14 @@
         width: 80%;
         padding-bottom: 30px;
     }
+    .footWrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .infoNav{
+        margin: 1%;
+    }
     .footer1 {
         display: flex;
         flex-direction: column;
@@ -173,6 +182,7 @@
         display: flex;
         flex-direction: column-reverse;
         padding-top: 129px;
+        height: 70vh;
     }
     .divForm{
         width: 100%;
@@ -216,4 +226,13 @@
     .main-article{
         padding-top: 10%;
     }
+    .text-contact{
+        display: none;
+    }
+}
+
+/* Media query for small mobile like iphone 5 and smaller */
+@media only screen and (max-width: 350px){
+    .nav-list li {
+        line-height: 40px;
 }
