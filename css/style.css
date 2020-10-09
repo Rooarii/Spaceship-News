@@ -304,6 +304,24 @@ input:checked[type='checkbox']:before {
 .card6 {
     background-image: url("../images/article6.jpeg");
 }
+.card7 {
+    background-image: url("../images/article7.jpeg");
+}
+.card8 {
+    background-image: url("../images/article8.jpeg");
+}
+.card9 {
+    background-image: url("../images/article9.jpeg");
+}
+.card10 {
+    background-image: url("../images/article10.jpeg");
+}
+.card11 {
+    background-image: url("../images/article11.jpeg");
+}
+.card12 {
+    background-image: url("../images/article12.png");
+}
 
 /*ARTICLE (Maxime)*/
 .article-title {
